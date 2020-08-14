@@ -1,11 +1,583 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>App Next Store Demo</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/wow.js"></script>
+
+    <title>App Next Store Demo</title>
+  </head>
+  <body>
+    <script>
+      // running wowjs
+      new WOW().init();
+    </script>
+    <!-- header -->
+    <header>
+      <nav>
+        <div class="container">
+          <div class="default-nav">
+            <p class="left">
+              Xin chào bạn có thể <a href="">Đăng nhập</a> hoặc
+              <a href="">Tạo tài khoản mới</a>
+            </p>
+            <div class="user-info">
+              <ul>
+                <li>
+                  <a href="">
+                    <i class="fa fa-user"></i>
+                    <span>Tài khoản</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa fa-share"></i>
+                    <span>Thanh toán</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="customize-nav">
+            <div class="left">
+              <ul>
+                <li>
+                  <i class="fa fa-truck caret"></i>
+                  <div class="content">
+                    <p>miễn phí giao hàng</p>
+                    <p>đơn hàng trên 500.000đ</p>
+                  </div>
+                </li>
+                <li>
+                  <i class="fa fa-repeat caret"></i>
+                  <div class="content">
+                    <p>miễn phí đổi trả</p>
+                    <p>miễn phí 90 ngày đổi trả</p>
+                  </div>
+                </li>
+                <li>
+                  <i class="fa fa-money caret"></i>
+                  <div class="content">
+                    <p>thành viên ưu đãi</p>
+                    <p>đăng ký miễn phí</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="popup-user">
+              <div class="dropdown">
+                <i class="fa fa-user"></i>
+                <span>Tài Khoản</span>
+                <i class="fa fa-angle-down"></i>
+              </div>
+              <div class="wow bounceIn popup-content">
+                <ul>
+                  <li>
+                    <a href="">
+                      <i class="fa fa-user"></i>
+                      <span>Tài khoản</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <i class="fa fa-share"></i>
+                      <span>Thanh toán</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="cart">
+              <div>
+                <i class="fa fa-shopping-cart caret"></i>
+              </div>
+              <div class="content">
+                <p>giỏ hàng</p>
+                <p>
+                  <span class="product-count">0</span> sản phẩm -
+                  <span class="price">0</span><sup>đ</sup>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="header-main">
+        <div class="container">
+          <div class="left">
+            <img src="images/logo-homepage.png" alt="" />
+          </div>
+          <div class="header-main-center">
+            <ul>
+              <li>
+                <i class="fa fa-truck caret"></i>
+                <div class="content">
+                  <p>miễn phí giao hàng</p>
+                  <p>đơn hàng trên 500.000đ</p>
+                </div>
+              </li>
+              <li>
+                <i class="fa fa-repeat caret"></i>
+                <div class="content">
+                  <p>miễn phí đổi trả</p>
+                  <p>miễn phí 90 ngày đổi trả</p>
+                </div>
+              </li>
+              <li>
+                <i class="fa fa-money caret"></i>
+                <div class="content">
+                  <p>thành viên ưu đãi</p>
+                  <p>đăng ký miễn phí</p>
+                </div>
+              </li>
+            </ul>
+            <div class="search-block-top">
+              <form action="">
+                <input type="text" placeholder="Tìm kiếm ..." />
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+          </div>
+          <div class="right">
+            <i class="fa fa-shopping-cart caret"></i>
+            <div class="content">
+              <p>giỏ hàng</p>
+              <p>
+                <span class="product-count">0</span> sản phẩm -
+                <span class="price">0</span><sup>đ</sup>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mega-menu">
+        <div class="container">
+          <div class="menu-container">
+            <ul>
+              <li>
+                <a href="#">Trang chủ </a>
+              </li>
+              <li class="caret-up">
+                <a href="#"
+                  >Bộ sưu tập
+                  <i class="fa fa-chevron-down"></i>
+                </a>
+                <div class="sub-lv1">
+                  <ul>
+                    <li>
+                      <a href=""
+                        >Dạng lưới
+                        <i class="fa fa-chevron-right"></i>
+                      </a>
+                      <div class="sub-lv2">
+                        <ul>
+                          <li>
+                            <a href="">Cột trái</a>
+                          </li>
+
+                          <li>
+                            <a href="">Cột phải</a>
+                          </li>
+                          <li>
+                            <a href="">Toàn chiều rộng</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <a href=""
+                        >Dạng danh sách
+                        <i class="fa fa-chevron-right"></i>
+                      </a>
+                      <div class="sub-lv2">
+                        <ul>
+                          <li>
+                            <a href="">Cột trái</a>
+                          </li>
+
+                          <li>
+                            <a href="">Cột phải</a>
+                          </li>
+                          <li>
+                            <a href="">Toàn chiều rộng</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="caret-up">
+                <a href="#"
+                  >Sản phẩm
+                  <i class="fa fa-chevron-down"></i>
+                </a>
+                <div class="sub-lv1">
+                  <ul>
+                    <li>
+                      <a href="">Cột trái</a>
+                    </li>
+                    <li>
+                      <a href="">Cột phải</a>
+                    </li>
+                    <li>
+                      <a href="">Toàn chiều rộng</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li style="position: static;" class="menu-style">
+                <div
+                  class="caret-up"
+                  style="position: relative; top: 100%; z-index: 2;"
+                ></div>
+                <a href="#"
+                  >Kiểu menu
+                  <i class="fa fa-chevron-down"></i>
+                </a>
+                <div class="sub-mega-menu-1 .sub-lv1">
+                  <ul>
+                    <li class="collection">
+                      <a href="" class="title">Mua theo bộ sưu tập</a>
+                      <ul>
+                        <li>
+                          <a href="">TV</a>
+                        </li>
+                        <li>
+                          <a href="">Laptop</a>
+                        </li>
+                        <li>
+                          <a href="">Smartphone</a>
+                        </li>
+                        <li>
+                          <a href="">Máy tính bảng</a>
+                        </li>
+                        <li>
+                          <a href="">Máy say sinh tố</a>
+                        </li>
+                        <li>
+                          <a href="">Sản phẩm mới</a>
+                        </li>
+                        <li>
+                          <a href="">Sản phẩm nổi bật</a>
+                        </li>
+                        <li>
+                          <a href="">Sản phẩm bán chạy</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="iframe-video">
+                      <span class="title">ap framework</span>
+                      <div
+                        style="width: 100%; height: 250px; background: gray;"
+                      ></div>
+                    </li>
+                    <li class="product-container">
+                      <p class="title">sản phẩm bán chạy</p>
+                      <ul>
+                        <li>
+                          <div class="product-beta">
+                            <img src="images/product-beta-1.jpg" alt="" />
+                            <div class="product-description">
+                              <a href="">
+                                <span class="product-name"
+                                  >Ấm điện siêu tốc gold sun</span
+                                >
+                              </a>
+                              <p class="price">400,000<sup>đ</sup></p>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="product-beta">
+                            <img src="images/product-beta-1.jpg" alt="" />
+                            <div class="product-description">
+                              <a href="">
+                                <span class="product-name"
+                                  >Ấm điện siêu tốc gold sun</span
+                                >
+                              </a>
+                              <p class="price">400,000<sup>đ</sup></p>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="product-beta">
+                            <img src="images/product-beta-1.jpg" alt="" />
+                            <div class="product-description">
+                              <a href="">
+                                <span class="product-name"
+                                  >Ấm điện siêu tốc gold sun</span
+                                >
+                              </a>
+                              <div class="price">
+                                <span class="negative-price"
+                                  >400,000<sup>đ</sup></span
+                                >
+                                <span class="positive-price"
+                                  >400,000<sup>đ</sup></span
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#"
+                  >Giới thiệu
+                  <i class="fa fa-chevron-down"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">Tin tức</a>
+              </li>
+            </ul>
+            <div class="search-block">
+              <form action="" class="form-1">
+                <input type="text" placeholder="Tìm kiếm ..." />
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+              <form action="" class="form-2">
+                <input type="text" placeholder="Tìm kiếm ..." />
+                <button type="submit"><i class="fa fa-search"></i></button>
+                <span><i class="fa fa-search"></i></span>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- /header -->
+    <!-- fixed-icon -->
+    <div class="fixed-panel">
+      <div class="item">
+        <div class="control-panel">
+          <img src="images/control-panel.svg" alt="control-panel.sgv" />
+        </div>
+        <div class="panel-tool">
+          <p class="box-title">panel tool</p>
+          <ul>
+            <li>
+              <p class="title">
+                <i
+                  class="fa fa-thumb-tack"
+                  aria-hidden="true"
+                  style="transform: rotate(45deg);"
+                ></i>
+                float style
+              </p>
+              <div class="option">
+                <p class="option-name">FLOAT HEADER</p>
+                <div class="switch">
+                  <input type="checkbox" name="" id="" class="checkbox" />
+                  <label for="" class="switch-checkbox">
+                    <span class="switch-switch"></span>
+                    <span class="switch-onoff"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="option">
+                <p class="option-name">FLOAT TOPBAR</p>
+                <div class="switch">
+                  <input type="checkbox" name="" id="" class="checkbox" />
+                  <label for="" class="switch-checkbox">
+                    <span class="switch-switch"></span>
+                    <span class="switch-onoff"></span>
+                  </label>
+                </div>
+              </div>
+            </li>
+            <li>
+              <p class="title">
+                <i class="fa fa-desktop"></i>
+                layout mode
+              </p>
+              <span class="layout">
+                Default
+              </span>
+              <span class="layout">
+                Box Large
+              </span>
+              <span class="layout">
+                Box Medium
+              </span>
+            </li>
+            <li>
+              <p class="title">
+                <span style="font-size: 24px;">H</span>
+                header mode
+              </p>
+              <span class="header-mode" id="header-default">
+                Header Default
+              </span>
+              <span class="header-mode" id="header-one">
+                Header One
+              </span>
+              <span class="header-mode" id="header-two">
+                Header Two
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- /fixed-icon -->
+    <!-- page main content -->
+    <div class="container home-page" style="height: 1000px; z-index: 1;"></div>
+    <!-- /page main content -->
+  </body>
+  <script>
+    $(document).ready(function () {
+      $(".popup-user").hover(
+        function () {
+          // over
+          $(".popup-content").css({
+            visibility: "visible",
+            opacity: 1,
+            "z-index": 3,
+          });
+        },
+        function () {
+          // out
+          $(".popup-content").css({
+            visibility: "hidden",
+            opacity: 0,
+            "z-index": -1,
+          });
+        }
+      );
+      $(".mega-menu .container ul li").hover(
+        function () {
+          // over
+
+          $(this).find(".sub-lv1").css({
+            top: "100%",
+            opacity: "1",
+            "z-index": "2",
+          });
+        },
+        function () {
+          // out
+          $(this).find(".sub-lv1").css({
+            top: "150%",
+            opacity: "0",
+            "z-index": "-1",
+          });
+        }
+      );
+      $(".mega-menu .container ul li ul li").hover(
+        function () {
+          // over
+          $(this).find(".sub-lv2").css({
+            left: "100%",
+            opacity: "1",
+            "z-index": "2",
+          });
+        },
+        function () {
+          // out
+          $(this).find(".sub-lv2").css({
+            left: "130%",
+            opacity: "0",
+            "z-index": "-1",
+          });
+        }
+      );
+      $(".menu-style").hover(
+        function () {
+          // over
+          $(this).find(".sub-mega-menu-1").css({
+            top: "100%",
+            opacity: "1",
+            "z-index": "2",
+          });
+        },
+        function () {
+          // out
+          $(this).find(".sub-mega-menu-1").css({
+            top: "150%",
+            opacity: "0",
+            "z-index": "-1",
+          });
+        }
+      );
+      $(".control-panel").click(function () {
+        let temp = $(".fixed-panel");
+        if (temp.css("right") == "-15px") {
+          temp.css("right", "285px");
+        } else {
+          temp.css("right", "-15px");
+        }
+      });
+      // changing header mode
+      let navDefault = $(".default-nav");
+      let navCustomize = $(".customize-nav");
+      let mainHeader = $(".header-main");
+      let mainMenu = $(".main-menu");
+      $("#header-default").click(function () {
+        navCustomize.css({ display: "none" });
+        navDefault.css({ display: "flex" });
+        mainHeader.find(".header-left").css({
+          left: "0px",
+        });
+        mainHeader
+          .find(".left")
+          .css({ left: "0", transform: "translate(0, 0)" , transition: "0s"});
+        mainHeader.find(".right").css({ top: "0" });
+
+        mainHeader.find(".search-block-top").css("display", "none");
+        mainHeader.find("ul:first").css("display", "flex");
+        navCustomize.find(".cart").css({
+          top: "200px",
+        });
+      });
+      $("#header-one").click(function () {
+        navDefault.css({
+          display: "none",
+        });
+        mainHeader.find(".right").css({ top: "-200px" });
+        mainHeader
+          .find(".left")
+          .css({ left: "50%", transform: "translate(-50%, 0)" });
+        mainHeader.find("ul:first").css("display", "none");
+        navCustomize
+          .css({
+            display: "flex",
+          })
+          .find(".left")
+          .css({
+            display: "none",
+          });
+        navCustomize.find(".cart").css({
+          top: "0px",
+        })
+      });
+      $("#header-two").click(function () {});
+      $(".form-2").find("span").click(function () {
+        $(".form-2").find("span").css({display:"none"})
+        $(".form-2").find("input").css({
+        width: "100%",
+        padding: "11px",
+        border: "1px solid #eeeeee",
+      });
+      $(".form-2").find("button").css({
+        visibility: "visible",
+      });
+      }
+        
+      );;
+    });
+  </script>
 </html>
