@@ -20,34 +20,274 @@
       // running wowjs
       new WOW().init();
     </script>
-    <!-- header -->
-    <header>
-      <nav>
-        <div class="container">
-          <div class="default-nav">
-            <p class="left">
-              Xin chào bạn có thể <a href="">Đăng nhập</a> hoặc
-              <a href="">Tạo tài khoản mới</a>
-            </p>
-            <div class="user-info">
-              <ul>
+    <div class="canvas-nav">
+      <div class="off-canvas-nav-btn">
+        <i class="fa fa-times" aria-hidden="true" onclick="closeNav();"></i>
+      </div>
+      <ul class="mobile-nav">
+        <li>
+          <a href="" class="title">
+            Trang chủ
+          </a>
+        </li>
+        <li>
+          <div class="title">
+            <a href="">
+              Bộ sưu tập
+              <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </a>
+          </div>
+          <ul class="mobile-nav-lvl1">
+            <li>
+              <p>Dạng lưới</p>
+              <ul class="mobile-nav-lvl2">
                 <li>
-                  <a href="">
-                    <i class="fa fa-user"></i>
-                    <span>Tài khoản</span>
-                  </a>
+                  Cột trái
                 </li>
                 <li>
-                  <a href="">
-                    <i class="fa fa-share"></i>
-                    <span>Thanh toán</span>
-                  </a>
+                  Cột phải
+                </li>
+                <li>
+                  Toàn chiều rộng
                 </li>
               </ul>
+            </li>
+          </ul>
+          <ul class="mobile-nav-lvl1">
+            <li>
+              <p>Dạng danh sách</p>
+              <ul class="mobile-nav-lvl2">
+                <li>
+                  Cột trái
+                </li>
+                <li>
+                  Cột phải
+                </li>
+                <li>
+                  Toàn chiều rộng
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="title">
+            <a href="">
+              Sản phẩm
+              <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </a>
+          </div>
+          <ul class="mobile-nav-lvl1">
+            <li>
+              <p>Cột trái</p>
+            </li>
+            <li>
+              <p>Cột phải</p>
+            </li>
+            <li>
+              <p>Toàn chiều rộng</p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="title">
+            <a href="">Kiểu Menu</a>
+            <i class="fa fa-caret-down"></i>
+          </div>
+          <ul class="mobile-nav-lvl1">
+            <li>
+              <ul class="mobile-nav-lvl2">
+                <p>Mua theo bộ sưu tập</p>
+                <li>
+                  TV
+                </li>
+                <li>
+                  Laptop
+                </li>
+                <li>
+                  Smartphone
+                </li>
+                <li>
+                  Máy tính bảng
+                </li>
+                <li>
+                  Máy say sinh tố
+                </li>
+                <li>
+                  Sản phẩm mới
+                </li>
+                <li>
+                  Sản phẩm nổi bật
+                </li>
+                <li>
+                  Sản phẩm bán chạy
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div class="mobile-item-container">
+                <p class="title">Sản phẩm bán chạy</p>
+                <div class="mobile-bar-item">
+                  <div class="item-img">
+                    <a href=""
+                      ><img src="images/mobile-bar-item.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="item-detail">
+                    <p class="item-name">
+                      <a href="">Ấm điện siêu tốc Goldsun KBF124564577</a>
+                    </p>
+                    <p class="item-price">400,000<sup>đ</sup></p>
+                  </div>
+                </div>
+                <div class="mobile-bar-item">
+                  <div class="item-img">
+                    <a href=""
+                      ><img src="images/mobile-bar-item.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="item-detail">
+                    <p class="item-name">
+                      <a href="">Ấm điện siêu tốc Goldsun KBF124564577</a>
+                    </p>
+                    <p class="item-price">400,000<sup>đ</sup></p>
+                  </div>
+                </div>
+                <div class="mobile-bar-item">
+                  <div class="item-img">
+                    <a href=""
+                      ><img src="images/mobile-bar-item.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="item-detail">
+                    <p class="item-name">
+                      <a href="">Ấm điện siêu tốc Goldsun KBF124564577</a>
+                    </p>
+                    <p class="item-price">400,000<sup>đ</sup></p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="title">
+            <a href="">Giới thiệu</a>
+            <i class="fa fa-caret-down"></i>
+          </div>
+          <ul class="mobile-nav-lvl1">
+            <li>
+              <p><a href="">Danh sách giới thiệu</a></p>
+            </li>
+            <li>
+              <p><a href="">Videos</a></p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="title">
+            <a href="">Tin tức</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="main">
+      <!-- header -->
+      <header>
+        <nav>
+          <div class="container">
+            <div class="default-nav">
+              <p class="left">
+                Xin chào bạn có thể <a href="">Đăng nhập</a> hoặc
+                <a href="">Tạo tài khoản mới</a>
+              </p>
+              <div class="user-info">
+                <ul>
+                  <li>
+                    <a href="">
+                      <i class="fa fa-user"></i>
+                      <span>Tài khoản</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <i class="fa fa-share"></i>
+                      <span>Thanh toán</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="customize-nav">
+              <div class="left">
+                <ul>
+                  <li>
+                    <i class="fa fa-truck caret"></i>
+                    <div class="content">
+                      <p>miễn phí giao hàng</p>
+                      <p>đơn hàng trên 500.000đ</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fa fa-repeat caret"></i>
+                    <div class="content">
+                      <p>miễn phí đổi trả</p>
+                      <p>miễn phí 90 ngày đổi trả</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fa fa-money caret"></i>
+                    <div class="content">
+                      <p>thành viên ưu đãi</p>
+                      <p>đăng ký miễn phí</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="popup-user">
+                <div class="dropdown">
+                  <i class="fa fa-user"></i>
+                  <span>Tài Khoản</span>
+                  <i class="fa fa-angle-down"></i>
+                </div>
+                <div class="wow bounceIn popup-content">
+                  <ul>
+                    <li>
+                      <a href="">
+                        <i class="fa fa-user"></i>
+                        <span>Tài khoản</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <i class="fa fa-share"></i>
+                        <span>Thanh toán</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="cart">
+                <div>
+                  <i class="fa fa-shopping-cart caret"></i>
+                </div>
+                <div class="content">
+                  <p>giỏ hàng</p>
+                  <p>
+                    <span class="product-count">0</span> sản phẩm -
+                    <span class="price">0</span><sup>đ</sup>
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="customize-nav">
+        </nav>
+        <div class="header-main">
+          <div class="container">
             <div class="left">
+              <img src="images/logo-homepage.png" alt="" />
+            </div>
+            <div class="header-main-center">
               <ul>
                 <li>
                   <i class="fa fa-truck caret"></i>
@@ -71,34 +311,15 @@
                   </div>
                 </li>
               </ul>
-            </div>
-            <div class="popup-user">
-              <div class="dropdown">
-                <i class="fa fa-user"></i>
-                <span>Tài Khoản</span>
-                <i class="fa fa-angle-down"></i>
-              </div>
-              <div class="wow bounceIn popup-content">
-                <ul>
-                  <li>
-                    <a href="">
-                      <i class="fa fa-user"></i>
-                      <span>Tài khoản</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      <i class="fa fa-share"></i>
-                      <span>Thanh toán</span>
-                    </a>
-                  </li>
-                </ul>
+              <div class="search-block-top">
+                <form action="">
+                  <input type="text" placeholder="Tìm kiếm ..." />
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
               </div>
             </div>
-            <div class="cart">
-              <div>
-                <i class="fa fa-shopping-cart caret"></i>
-              </div>
+            <div class="right">
+              <i class="fa fa-shopping-cart caret"></i>
               <div class="content">
                 <p>giỏ hàng</p>
                 <p>
@@ -109,257 +330,229 @@
             </div>
           </div>
         </div>
-      </nav>
-      <div class="header-main">
-        <div class="container">
-          <div class="left">
-            <img src="images/logo-homepage.png" alt="" />
-          </div>
-          <div class="header-main-center">
-            <ul>
-              <li>
-                <i class="fa fa-truck caret"></i>
-                <div class="content">
-                  <p>miễn phí giao hàng</p>
-                  <p>đơn hàng trên 500.000đ</p>
-                </div>
-              </li>
-              <li>
-                <i class="fa fa-repeat caret"></i>
-                <div class="content">
-                  <p>miễn phí đổi trả</p>
-                  <p>miễn phí 90 ngày đổi trả</p>
-                </div>
-              </li>
-              <li>
-                <i class="fa fa-money caret"></i>
-                <div class="content">
-                  <p>thành viên ưu đãi</p>
-                  <p>đăng ký miễn phí</p>
-                </div>
-              </li>
-            </ul>
-            <div class="search-block-top">
-              <form action="">
-                <input type="text" placeholder="Tìm kiếm ..." />
-                <button type="submit"><i class="fa fa-search"></i></button>
-              </form>
-            </div>
-          </div>
-          <div class="right">
-            <i class="fa fa-shopping-cart caret"></i>
-            <div class="content">
-              <p>giỏ hàng</p>
-              <p>
-                <span class="product-count">0</span> sản phẩm -
-                <span class="price">0</span><sup>đ</sup>
-              </p>
+        <div class="mega-menu">
+          <div class="container">
+            <div class="menu-container">
+              <ul>
+                <li>
+                  <a href="#">Trang chủ </a>
+                </li>
+                <li class="caret-up">
+                  <a href="#"
+                    >Bộ sưu tập
+                    <i class="fa fa-chevron-down"></i>
+                  </a>
+                  <div class="sub-lv1">
+                    <ul>
+                      <li>
+                        <a href=""
+                          >Dạng lưới
+                          <i class="fa fa-chevron-right"></i>
+                        </a>
+                        <div class="sub-lv2">
+                          <ul>
+                            <li>
+                              <a href="">Cột trái</a>
+                            </li>
+
+                            <li>
+                              <a href="">Cột phải</a>
+                            </li>
+                            <li>
+                              <a href="">Toàn chiều rộng</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <a href=""
+                          >Dạng danh sách
+                          <i class="fa fa-chevron-right"></i>
+                        </a>
+                        <div class="sub-lv2">
+                          <ul>
+                            <li>
+                              <a href="">Cột trái</a>
+                            </li>
+
+                            <li>
+                              <a href="">Cột phải</a>
+                            </li>
+                            <li>
+                              <a href="">Toàn chiều rộng</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="caret-up">
+                  <a href="#"
+                    >Sản phẩm
+                    <i class="fa fa-chevron-down"></i>
+                  </a>
+                  <div class="sub-lv1">
+                    <ul>
+                      <li>
+                        <a href="">Cột trái</a>
+                      </li>
+                      <li>
+                        <a href="">Cột phải</a>
+                      </li>
+                      <li>
+                        <a href="">Toàn chiều rộng</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="menu-style caret-up">
+                  <div
+                    class="caret-up"
+                    style="position: relative; top: 100%; z-index: 2;"
+                  ></div>
+                  <a href="#"
+                    >Kiểu menu
+                    <i class="fa fa-chevron-down"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"
+                    >Giới thiệu
+                    <i class="fa fa-chevron-down"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Tin tức</a>
+                </li>
+              </ul>
+              <div class="mobile-nav-icon" style="display: none;">
+                <i
+                  class="fa fa-bars"
+                  aria-hidden="true"
+                  style="
+                    padding: 10px;
+                    margin: 5px;
+                    background: #31a8d2;
+                    color: white;
+                  "
+                  onclick="openNav();"
+                ></i>
+              </div>
+              <div class="search-block">
+                <form action="" class="form-1">
+                  <input type="text" placeholder="Tìm kiếm ..." />
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+                <form action="" class="form-2">
+                  <input type="text" placeholder="Tìm kiếm ..." />
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                  <span><i class="fa fa-search"></i></span>
+                </form>
+              </div>
+              <div class="sub-mega-menu-1">
+                <ul>
+                  <li class="collection">
+                    <a href="" class="title">Mua theo bộ sưu tập</a>
+                    <ul>
+                      <li>
+                        <a href="">TV</a>
+                      </li>
+                      <li>
+                        <a href="">Laptop</a>
+                      </li>
+                      <li>
+                        <a href="">Smartphone</a>
+                      </li>
+                      <li>
+                        <a href="">Máy tính bảng</a>
+                      </li>
+                      <li>
+                        <a href="">Máy say sinh tố</a>
+                      </li>
+                      <li>
+                        <a href="">Sản phẩm mới</a>
+                      </li>
+                      <li>
+                        <a href="">Sản phẩm nổi bật</a>
+                      </li>
+                      <li>
+                        <a href="">Sản phẩm bán chạy</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="iframe-video">
+                    <span class="title">ap framework</span>
+                    <div
+                      style="width: 100%; height: 250px; background: gray;"
+                    ></div>
+                  </li>
+                  <li class="product-container">
+                    <p class="title">sản phẩm bán chạy</p>
+                    <ul>
+                      <li>
+                        <div class="product-beta">
+                          <img src="images/product-beta-1.jpg" alt="" />
+                          <div class="product-description">
+                            <a href="">
+                              <span class="product-name"
+                                >Ấm điện siêu tốc gold sun</span
+                              >
+                            </a>
+                            <p class="price">400,000<sup>đ</sup></p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="product-beta">
+                          <img src="images/product-beta-1.jpg" alt="" />
+                          <div class="product-description">
+                            <a href="">
+                              <span class="product-name"
+                                >Ấm điện siêu tốc gold sun</span
+                              >
+                            </a>
+                            <p class="price">400,000<sup>đ</sup></p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="product-beta">
+                          <img src="images/product-beta-1.jpg" alt="" />
+                          <div class="product-description">
+                            <a href="">
+                              <span class="product-name"
+                                >Ấm điện siêu tốc gold sun</span
+                              >
+                            </a>
+                            <div class="price">
+                              <span class="negative-price"
+                                >400,000<sup>đ</sup></span
+                              >
+                              <span class="positive-price"
+                                >400,000<sup>đ</sup></span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="mega-menu">
-        <div class="container">
-          <div class="menu-container">
-            <ul>
-              <li>
-                <a href="#">Trang chủ </a>
-              </li>
-              <li class="caret-up">
-                <a href="#"
-                  >Bộ sưu tập
-                  <i class="fa fa-chevron-down"></i>
-                </a>
-                <div class="sub-lv1">
-                  <ul>
-                    <li>
-                      <a href=""
-                        >Dạng lưới
-                        <i class="fa fa-chevron-right"></i>
-                      </a>
-                      <div class="sub-lv2">
-                        <ul>
-                          <li>
-                            <a href="">Cột trái</a>
-                          </li>
+      </header>
+      <!-- /header -->
 
-                          <li>
-                            <a href="">Cột phải</a>
-                          </li>
-                          <li>
-                            <a href="">Toàn chiều rộng</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li>
-                      <a href=""
-                        >Dạng danh sách
-                        <i class="fa fa-chevron-right"></i>
-                      </a>
-                      <div class="sub-lv2">
-                        <ul>
-                          <li>
-                            <a href="">Cột trái</a>
-                          </li>
-
-                          <li>
-                            <a href="">Cột phải</a>
-                          </li>
-                          <li>
-                            <a href="">Toàn chiều rộng</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="caret-up">
-                <a href="#"
-                  >Sản phẩm
-                  <i class="fa fa-chevron-down"></i>
-                </a>
-                <div class="sub-lv1">
-                  <ul>
-                    <li>
-                      <a href="">Cột trái</a>
-                    </li>
-                    <li>
-                      <a href="">Cột phải</a>
-                    </li>
-                    <li>
-                      <a href="">Toàn chiều rộng</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li style="position: static;" class="menu-style">
-                <div
-                  class="caret-up"
-                  style="position: relative; top: 100%; z-index: 2;"
-                ></div>
-                <a href="#"
-                  >Kiểu menu
-                  <i class="fa fa-chevron-down"></i>
-                </a>
-                <div class="sub-mega-menu-1 .sub-lv1">
-                  <ul>
-                    <li class="collection">
-                      <a href="" class="title">Mua theo bộ sưu tập</a>
-                      <ul>
-                        <li>
-                          <a href="">TV</a>
-                        </li>
-                        <li>
-                          <a href="">Laptop</a>
-                        </li>
-                        <li>
-                          <a href="">Smartphone</a>
-                        </li>
-                        <li>
-                          <a href="">Máy tính bảng</a>
-                        </li>
-                        <li>
-                          <a href="">Máy say sinh tố</a>
-                        </li>
-                        <li>
-                          <a href="">Sản phẩm mới</a>
-                        </li>
-                        <li>
-                          <a href="">Sản phẩm nổi bật</a>
-                        </li>
-                        <li>
-                          <a href="">Sản phẩm bán chạy</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="iframe-video">
-                      <span class="title">ap framework</span>
-                      <div
-                        style="width: 100%; height: 250px; background: gray;"
-                      ></div>
-                    </li>
-                    <li class="product-container">
-                      <p class="title">sản phẩm bán chạy</p>
-                      <ul>
-                        <li>
-                          <div class="product-beta">
-                            <img src="images/product-beta-1.jpg" alt="" />
-                            <div class="product-description">
-                              <a href="">
-                                <span class="product-name"
-                                  >Ấm điện siêu tốc gold sun</span
-                                >
-                              </a>
-                              <p class="price">400,000<sup>đ</sup></p>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="product-beta">
-                            <img src="images/product-beta-1.jpg" alt="" />
-                            <div class="product-description">
-                              <a href="">
-                                <span class="product-name"
-                                  >Ấm điện siêu tốc gold sun</span
-                                >
-                              </a>
-                              <p class="price">400,000<sup>đ</sup></p>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="product-beta">
-                            <img src="images/product-beta-1.jpg" alt="" />
-                            <div class="product-description">
-                              <a href="">
-                                <span class="product-name"
-                                  >Ấm điện siêu tốc gold sun</span
-                                >
-                              </a>
-                              <div class="price">
-                                <span class="negative-price"
-                                  >400,000<sup>đ</sup></span
-                                >
-                                <span class="positive-price"
-                                  >400,000<sup>đ</sup></span
-                                >
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li>
-                <a href="#"
-                  >Giới thiệu
-                  <i class="fa fa-chevron-down"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">Tin tức</a>
-              </li>
-            </ul>
-            <div class="search-block">
-              <form action="" class="form-1">
-                <input type="text" placeholder="Tìm kiếm ..." />
-                <button type="submit"><i class="fa fa-search"></i></button>
-              </form>
-              <form action="" class="form-2">
-                <input type="text" placeholder="Tìm kiếm ..." />
-                <button type="submit"><i class="fa fa-search"></i></button>
-                <span><i class="fa fa-search"></i></span>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- /header -->
+      <!-- page main content -->
+      <div
+        class="container home-page"
+        style="height: 1000px; z-index: 1;"
+      ></div>
+      <!-- /page main content -->
+    </div>
     <!-- fixed-icon -->
     <div class="fixed-panel">
       <div class="item">
@@ -434,9 +627,285 @@
       </div>
     </div>
     <!-- /fixed-icon -->
-    <!-- page main content -->
-    <div class="container home-page" style="height: 1000px; z-index: 1;"></div>
-    <!-- /page main content -->
+    <!-- fixed social icon -->
+    <div class="fixed-social-icon">
+      <ul>
+        <li>
+          <div class="social">
+            <i
+              class="fa fa-facebook caret-right"
+              aria-hidden="true"
+              style="background: #3a5898;"
+            ></i>
+            <span>Facebook</span>
+          </div>
+        </li>
+        <li>
+          <div class="social">
+            <i
+              class="fa fa-twitter caret-right"
+              aria-hidden="true"
+              style="background: #00acee;"
+            ></i>
+            <span>Twitter</span>
+          </div>
+        </li>
+        <li>
+          <div class="social">
+            <i
+              class="fa fa-instagram caret-right"
+              aria-hidden="true"
+              style="background: #3f729b;"
+            ></i>
+            <span>Instagram</span>
+          </div>
+        </li>
+        <li>
+          <div class="social">
+            <i
+              class="fa fa-pinterest caret-right"
+              aria-hidden="true"
+              style="background: #c72527;"
+            ></i>
+            <span>Pinterest</span>
+          </div>
+        </li>
+        <li>
+          <div class="social">
+            <i
+              class="fa fa-rss caret-right"
+              aria-hidden="true"
+              style="background: #0eba9e;"
+            ></i>
+            <span>RSS</span>
+          </div>
+        </li>
+        <li>
+          <div class="social">
+            <i
+              class="fa fa-youtube caret-right"
+              aria-hidden="true"
+              style="background: #ce3527;"
+            ></i>
+            <span>Youtube</span>
+          </div>
+        </li>
+        <li>
+          <div class="social">
+            <i
+              class="fa fa-google-plus caret-right"
+              aria-hidden="true"
+              style="background: #de6463;"
+            ></i>
+            <span>Google+</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="news-letter">
+      <p class="title">
+        đăng nhập để nhận tin
+      </p>
+      <div class="block-content">
+        <p>
+          Đăng nhập để nhận được những thông tin mới nhất về nội dung, sản phẩm
+          và hơn thế nữa.
+        </p>
+        <form action="">
+          <input type="text" name="" id="" placeholder="Email của bạn..." />
+          <button>
+            <i class="fa fa-envelope-o caret-left-only" aria-hidden="true"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- /fixed social icon -->
+    <!-- footer -->
+    <footer>
+      <div class="footer-top">
+        <div class="container">
+          <div class="row WOW animated fadeInUp animated">
+            <div
+              class="col-xl-12 col-lg-12 col-md-12 col-xs-12 caret-left content-header"
+              style="background: white;"
+            >
+              <p class="title">
+                TOP <span style="color: #31a8d2;"> Nhãn hiệu</span>
+              </p>
+            </div>
+          </div>
+          <div class="row vendor-list">
+            <div class="col-xl-2 col-lg-2 col-md-3 col-xs-6 vendor">
+              <a href=""><img src="images/vendor_logo_1.png" alt="" /></a>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-3 col-xs-6 vendor">
+              <a href=""><img src="images/vendor_logo_1.png" alt="" /></a>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-3 col-xs-6 vendor">
+              <a href=""><img src="images/vendor_logo_1.png" alt="" /></a>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-3 col-xs-6 vendor">
+              <a href=""><img src="images/vendor_logo_1.png" alt="" /></a>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-3 col-xs-6 vendor">
+              <a href=""><img src="images/vendor_logo_1.png" alt="" /></a>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-3 col-xs-6 vendor">
+              <a href=""><img src="images/vendor_logo_1.png" alt="" /></a>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-3 col-xs-6 vendor">
+              <a href=""><img src="images/vendor_logo_1.png" alt="" /></a>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-3 col-xs-6 vendor">
+              <a href=""><img src="images/vendor_logo_1.png" alt="" /></a>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-3 col-xs-6 vendor">
+              <a href=""><img src="images/vendor_logo_1.png" alt="" /></a>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-3 col-xs-6 vendor">
+              <a href=""><img src="images/vendor_logo_1.png" alt="" /></a>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-3 col-xs-6 vendor">
+              <a href=""><img src="images/vendor_logo_1.png" alt="" /></a>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-3 col-xs-6 vendor">
+              <a href=""><img src="images/vendor_logo_1.png" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-center">
+        <div class="container">
+          <div class="row">
+            <div
+              class="about-shop col-xl-3 col-sm-12 col-xs-12 WOW animated fadeInLeft"
+            >
+              <img src="images/shop_images_footer.png" alt="" />
+              <p>
+                Trang giới thiệu giúp khách hàng hiểu rõ hơn về cửa hàng của
+                bạn. Điều này sẽ giúp khách hàng cảm thấy tin tưởng khi mua hàng
+                trên website của bạn.
+              </p>
+            </div>
+            <div
+              class="col-xl-6 col-sm-12 col-xs-12 WOW animated fadeInUp footer-link"
+            >
+              <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                  <div class="link-block">
+                    <p class="block-title caret-left-only">Tài khoản</p>
+                    <div class="block-content">
+                      <ul>
+                        <li class="caret-left-only">
+                          <a href="">Đăng nhập</a>
+                        </li>
+                        <li class="caret-left-only">
+                          <a href="">Đăng ký</a>
+                        </li>
+                        <li class="caret-left-only">
+                          <a href="">Tài khoản</a>
+                        </li>
+                        <li class="caret-left-only">
+                          <a href="">Giỏ hàng</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                  <div class="link-block">
+                    <p class="block-title caret-left-only">Thông tin</p>
+                    <div class="block-content">
+                      <ul>
+                        <li class="caret-left-only">
+                          <a href="">Trang chủ</a>
+                        </li>
+                        <li class="caret-left-only">
+                          <a href="">Giới thiệu</a>
+                        </li>
+                        <li class="caret-left-only">
+                          <a href="">Tìm kiếm</a>
+                        </li>
+                        <li class="caret-left-only">
+                          <a href="">Tin tức</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                  <div class="link-block">
+                    <p class="block-title caret-left-only">Chính sách</p>
+                    <div class="block-content">
+                      <ul>
+                        <li class="caret-left-only">
+                          <a href="">Chính sách bảo mật</a>
+                        </li>
+                        <li class="caret-left-only">
+                          <a href="">Chính sách vận chuyển</a>
+                        </li>
+                        <li class="caret-left-only">
+                          <a href="">Chính sách đổi trả</a>
+                        </li>
+                        <li class="caret-left-only">
+                          <a href="">Điều khoản dịch vụ</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-xl-3 col-sm-12 col-xs-12 WOW animated fadeInRight link-twitter"
+            >
+              <div class="twitter-block caret-left-only">
+                Twitter
+              </div>
+              <iframe
+                id="twitter-widget-0"
+                scrolling="no"
+                frameborder="0"
+                allowtransparency="true"
+                allowfullscreen="true"
+                class="twitter-timeline twitter-timeline-rendered"
+                style="
+                  position: static;
+                  visibility: visible;
+                  display: inline-block;
+                  width: 520px;
+                  padding: 0px;
+                  border: none;
+                  max-width: 100%;
+                  min-width: 180px;
+                  margin-top: 0px;
+                  margin-bottom: 0px;
+                  height: 341.85px;
+                "
+                __idm_frm__="854"
+                data-widget-id="profile:ApolloTheme"
+                title="Twitter Timeline"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-maps">
+        <div class="content">
+          <span class="caret-down">
+            ĐỊA CHỈ CỬA HÀNG
+          </span>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          © Copyright
+          <a href=""> ApolloTheme</a>
+        </p>
+        <p><a href="">Powered by Haravan</a></p>
+      </div>
+    </footer>
+    <!-- /footer -->
   </body>
   <script>
     $(document).ready(function () {
@@ -498,7 +967,7 @@
       $(".menu-style").hover(
         function () {
           // over
-          $(this).find(".sub-mega-menu-1").css({
+          $(".mega-menu").find(".sub-mega-menu-1").css({
             top: "100%",
             opacity: "1",
             "z-index": "2",
@@ -506,7 +975,25 @@
         },
         function () {
           // out
-          $(this).find(".sub-mega-menu-1").css({
+          $(".mega-menu").find(".sub-mega-menu-1").css({
+            top: "150%",
+            opacity: "0",
+            "z-index": "-1",
+          });
+        }
+      );
+      $(".sub-mega-menu-1").hover(
+        function () {
+          // over
+          $(this).css({
+            top: "100%",
+            opacity: "1",
+            "z-index": "2",
+          });
+        },
+        function () {
+          // out
+          $(this).css({
             top: "150%",
             opacity: "0",
             "z-index": "-1",
@@ -534,13 +1021,13 @@
         });
         mainHeader
           .find(".left")
-          .css({ left: "0", transform: "translate(0, 0)" , transition: "0s"});
+          .css({ left: "0", transform: "translate(0, 0)", transition: "0s" });
         mainHeader.find(".right").css({ top: "0" });
 
         mainHeader.find(".search-block-top").css("display", "none");
         mainHeader.find("ul:first").css("display", "flex");
         navCustomize.find(".cart").css({
-          top: "200px",
+          top: "100px",
         });
       });
       $("#header-one").click(function () {
@@ -561,23 +1048,66 @@
             display: "none",
           });
         navCustomize.find(".cart").css({
+          display: "flex",
           top: "0px",
-        })
+        });
       });
-      $("#header-two").click(function () {});
-      $(".form-2").find("span").click(function () {
-        $(".form-2").find("span").css({display:"none"})
-        $(".form-2").find("input").css({
-        width: "100%",
-        padding: "11px",
-        border: "1px solid #eeeeee",
+      $("#header-two").click(function () {
+        navDefault.css({
+          display: "none",
+        });
+        navCustomize.css({ display: "flex" });
+        navCustomize.find(".cart").css({
+          top: "100px",
+          display: "none",
+        });
+        navCustomize.find(".left").css({
+          display: "block",
+        });
+        mainHeader
+          .find(".left")
+          .css({ left: "0%", transform: "translate(0,0)" });
+        mainHeader.find("ul:first").css("display", "none");
+        mainHeader.find(".search-block-top").css("display", "block");
+        mainHeader.find(".right").css({ top: "0px" });
       });
-      $(".form-2").find("button").css({
-        visibility: "visible",
-      });
-      }
-        
-      );;
+      $(".form-2")
+        .find("span")
+        .click(function () {
+          $(".form-2").find("span").css({ display: "none" });
+          $(".form-2").find("input").css({
+            width: "100%",
+            padding: "11px",
+            border: "1px solid #eeeeee",
+          });
+          $(".form-2").find("button").css({
+            visibility: "visible",
+          });
+        });
+        $(".news-letter .title").click(function () { 
+          if ($(".news-letter").css("bottom") == "-90px") {
+            $(".news-letter").css({
+            bottom : "0"
+          });
+          } else {
+            $(".news-letter").css({
+            bottom : "-90px"
+          });
+          }
+        });
     });
+  </script>
+  <script>
+    function openNav() {
+      document.getElementsByClassName("canvas-nav")[0].style.width = "250px";
+      document.getElementsByClassName("main")[0].style.left = "250px";
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      document.body.style.zIndex = "999";
+    }
+    function closeNav() {
+      document.getElementsByClassName("canvas-nav")[0].style.width = "0";
+      document.getElementsByClassName("main")[0].style.left = "0";
+      document.body.style.backgroundColor = "white";
+    }
   </script>
 </html>
