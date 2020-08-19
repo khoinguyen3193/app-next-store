@@ -1021,7 +1021,6 @@ header {
 }
 .content-header {
   text-transform: uppercase;
-  border: 1px solid $bg-4-color;
   & .title {
     padding: 10px 0;
     padding-left: 25px;
@@ -1258,14 +1257,9 @@ footer {
     
     & .nivo{
       position: relative;
-      & .caption-1{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        z-index: 9;
-        display: none;
+      & .caption{
+        visibility: hidden;
+        position: relative;
         & p{
           color: $text-primary-color;
           padding-bottom: 10px;
@@ -1295,5 +1289,121 @@ footer {
         }
       }
     }
+    & .owl-slide{
+      padding: 0;
+      & .sub-head{
+        height: 30px;
+        width: 100%;
+        &--red{
+          background: $bg-thrid-color;
+        }
+        &--gray{
+          background: $bg-4-color;
+        }
+        & .sub-title{
+          padding-left: 25px;
+          line-height: 30px;
+          height: 30px;
+          font-size: 20px;
+          text-transform: uppercase;
+        }
+      }
+    }
+    & .home-banner{
+      margin-top: 20px;
+    }
+  }
+}
+.product-block{
+  padding: 5px 0;
+  position: relative;
+  background: white;
+  & .product-image{
+    position: relative;
+    width: 100%;
+    & a{
+      width: 100%;
+      & > img{
+        width: 100%;
+        object-fit: cover;
+        transition: 0.3s;
+        opacity: 1;
+        z-index: 0;
+      }
+      & span{
+        position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          transition: 0.6s;
+          visibility: hidden;
+          opacity: 0;
+        & img{
+          width: 100%;
+        }
+      }
+      &:hover > img{
+        transform: rotateY(180deg);
+        visibility: hidden;
+        opacity: 0;
+      }
+      &:hover > span{
+        visibility: visible;
+        transform: rotateY(180deg);
+        opacity: 1;
+        z-index: 1;
+      }
+    }
+  }
+  & .sale-box{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: $bg-thrid-color;
+    color: $text-second-color;
+    text-align: center;
+    font-size: 12px;
+    z-index: 2;
+    &--round{
+      top: 5%;
+      right: 5%;
+      border-radius: 40px;
+      line-height: 40px;
+    }
+    &--triangle{
+      top: 0;
+      right: 0;
+      border-top: 40px solid $bg-thrid-color;
+      border-left: 40px solid transparent;
+    }
+  }
+  & .product-description{
+    text-align: center;
+  border-bottom: 1px solid $text-primary-color;
+    & .product-name{
+      font-size: 14px;
+      font-weight: bold;
+      & a{
+        transition: 0.3s;
+        text-decoration: none;
+        &:hover{
+          color: $bg-second-color;
+        }
+      }
+    }
+    & .price{
+      font-size: 13px;
+      margin: 10px 0;
+      & .positive-price{
+        color: $bg-thrid-color;
+      }
+    }
+  }
+  & .countdown-box{
+    margin: 10px 0;
+    text-align: center;
+    color: $bg-thrid-color;
+    font-weight: bold;
+    font-size: 13px;
   }
 }

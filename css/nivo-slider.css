@@ -67,28 +67,71 @@ left: 0px;
 /* Caption styles */
 .nivo-caption {
 	position:absolute;
-	left:0px;
-	bottom:0px;
-	background:#000;
+	top: 0;
+	left: 0;
 	color:#fff;
 	width:100%;
+	height: 100%;
 	z-index:8;
 	padding: 5px 10px;
-	opacity: 0.8;
+	text-align: center;
 	overflow: hidden;
 	display: none;
-	-moz-opacity: 0.8;
-	filter:alpha(opacity=8);
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
 	box-sizing: border-box;         /* Opera/IE 8+ */
 }
+.nivo-caption .caption-1{
+	text-align: left;
+	margin-top: 50px;
+	margin-left: 30px;
+}
+.nivo-caption .caption-3{
+	text-align: right;
+	margin-top: 100px;
+	margin-right: 50px;
+}
+.nivo-caption .title{
+	text-transform: uppercase;
+	font-size: 24px;
+	animation-name: bounceInRight;
+	animation-delay: 0.5s;
+}
+.nivo-caption .collection{
+	text-transform: uppercase;
+  font-size: 30px;
+	font-weight: bold;
+	animation-name: bounceInLeft;
+	animation-delay: 1s;
+	
+}
+.nivo-caption .collection-detail{
+animation-name: fadeInRight;
+	animation-delay: 1.5s;
+}
+.nivo-caption .btn{
+  font-size: 14px;
+	background: rgba(68, 68, 68, 0.6);
+	margin: 0 5px;
+	border-radius: none !important;
+animation-name: fadeInLeft;
+	animation-delay: 2s;
+	padding: 0;
+	outline: none;
+}
+.nivo-caption .btn a{
+	padding: 5px 15px;
+	display: block;
+	color: #c2c2c2;
+  text-decoration: none;
+}
+.nivo-caption .btn a:hover{
+  background: #31a8d2;
+}
 .nivo-caption p {
 	padding:5px;
+	color: lightgray;
 	margin:0;
-}
-.nivo-caption a {
-	display:inline !important;
 }
 .nivo-html-caption {
     display:none;
@@ -124,7 +167,10 @@ left: 0px;
 .nivo-nextNav:hover::before{
 	border-left-color: #31a8d2;
 	border-right-color: #31a8d2;
-
+}
+.nivo-prevNav:hover::after,
+.nivo-nextNav:hover::after{
+	color: white;
 }
 .nivo-prevNav::after{
 	font-family: "FontAwesome";
