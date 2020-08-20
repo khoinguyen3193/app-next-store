@@ -78,7 +78,7 @@
 .owl-carousel .owl-nav .owl-prev{
   position: relative;
   border: 1px solid rgba(245, 245, 245, 0.3);
-  background: #e55e5e;
+  background: transparent;
   width: 15px;
   height: 15px;
   border-radius: 50%;

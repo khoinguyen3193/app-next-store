@@ -1,4 +1,4 @@
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 992px) {
   .menu-container ul:first-child,
   .menu-container .sub-mega-menu-1 {
     display: none !important;
@@ -9,4 +9,24 @@
   header .header-main .container .header-main-center ul:first-child{
     display: none !important;
   }
+  header .header-main-center{
+    display: none;
+  }
+  header .header-main .container .right{
+    min-width:150px;
+  }
+  .home-page .right .owl-slide{
+    display: none;
+  }
+  .main .mega-menu .container .menu-container .search-block{
+    width: 50%;
+  }
+  .main .mega-menu .container .menu-container .search-block .form-1{
+    display: block;
+    width: 100%;
+  }
+  .main .mega-menu .container .menu-container .search-block .form-2{
+  display: none;
 }
+}
+
