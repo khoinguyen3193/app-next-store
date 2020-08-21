@@ -267,16 +267,17 @@
                   </ul>
                 </div>
               </div>
-              <div class="cart">
-                <div>
-                  <i class="fa fa-shopping-cart caret"></i>
+              <div class="cart-btn">
+                <div class="cart">
+                  <button type="submit">
+                    <i class="fa fa-shopping-cart caret-right"></i>
+                    <span>Mua ngay</span>
+                  </button>
                 </div>
-                <div class="content">
-                  <p>giỏ hàng</p>
-                  <p>
-                    <span class="product-count">0</span> sản phẩm -
-                    <span class="price">0</span><sup>đ</sup>
-                  </p>
+                <div class="view">
+                  <a href="">
+                    <i class="fa fa-eye"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -561,6 +562,7 @@
                   class="content-header content-header--bg-blue content-header--white caret-left"
                 >
                   <p class="title">Danh mục</p>
+                  <div class="blank"></div>
                 </div>
                 <li>
                   <a href="">
@@ -593,6 +595,7 @@
                       </span>
                     </span>
                   </a>
+                  <i class="fa fa-angle-down toggleMenu" aria-hidden="true"></i>
                   <div class="sub-menu">
                     <div class="sub-menu-1">
                       <p class="title">sản phẩm hot</p>
@@ -696,6 +699,7 @@
                       </span>
                     </span>
                   </a>
+                  <i class="fa fa-angle-down toggleMenu" aria-hidden="true"></i>
                   <div class="sub-menu">
                     <div class="sub-menu-2">
                       <div class="menu-list">
@@ -835,37 +839,44 @@
                   class="content-header content-header--bg-blue content-header--white caret-left"
                 >
                   <p class="title">Sản phẩm vừa xem</p>
+                  <div class="blank-2"></div>
                 </div>
-                <div class="viewed-item">
-                  <div class="item-img">
-                    <a href="">
-                      <img src="images/viewed-product-img.jpg" alt="" />
-                    </a>
-                  </div>
-                  <div class="product-detail">
-                    <p class="item-name">
-                      <a href=""
-                        >Aplle iPad Wifi 3G 16GB ( Đen ) - Bản quốc tế</a
-                      >
-                    </p>
-                    <div class="price">20,000,000 <sup>đ</sup></div>
-                  </div>
-                </div>
-                <div class="viewed-item">
-                  <div class="item-img">
-                    <a href="">
-                      <img src="images/viewed-product-img.jpg" alt="" />
-                    </a>
-                  </div>
-                  <div class="product-detail">
-                    <p class="item-name">
-                      <a href=""
-                        >Aplle iPad Wifi 3G 16GB ( Đen ) - Bản quốc tế</a
-                      >
-                    </p>
-                    <div class="price">20,000,000 <sup>đ</sup></div>
-                  </div>
-                </div>
+                <ul>
+                  <li>
+                    <div class="viewed-item">
+                      <div class="item-img">
+                        <a href="">
+                          <img src="images/viewed-product-img.jpg" alt="" />
+                        </a>
+                      </div>
+                      <div class="product-detail">
+                        <p class="item-name">
+                          <a href=""
+                            >Aplle iPad Wifi 3G 16GB ( Đen ) - Bản quốc tế</a
+                          >
+                        </p>
+                        <div class="price">20,000,000 <sup>đ</sup></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="viewed-item">
+                      <div class="item-img">
+                        <a href="">
+                          <img src="images/viewed-product-img.jpg" alt="" />
+                        </a>
+                      </div>
+                      <div class="product-detail">
+                        <p class="item-name">
+                          <a href=""
+                            >Aplle iPad Wifi 3G 16GB ( Đen ) - Bản quốc tế</a
+                          >
+                        </p>
+                        <div class="price">20,000,000 <sup>đ</sup></div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
               </div>
               <!-- /product-viewed -->
               <!-- left-banner -->
@@ -888,6 +899,7 @@
                   <p class="title" style="color: black;">
                     Bài viết <span style="color: #31a8d2;">Mới</span>
                   </p>
+                  <div class="blank-2"></div>
                 </div>
                 <ul>
                   <li>
@@ -999,7 +1011,7 @@
                 >
                   <p class="title">bán chạy nhất</p>
                 </div>
-                <div class="owl-carousel owl-theme product-block-container">
+                <div class="owl-carousel owl-theme hot-sale-left">
                   <div class="item">
                     <div class="product-block">
                       <div class="product-image">
@@ -1176,7 +1188,7 @@
             </div>
             <div class="col-md-8 col-lg-9 right">
               <div class="row">
-                <div class="col-md-12 col-lg-9 col-xl-9 nivo">
+                <div class="col-12 col-md-12 col-lg-9 nivo">
                   <div class="nivoSlider" id="slider">
                     <a href="">
                       <img
@@ -1245,7 +1257,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-xl-3 owl-slide">
+                <div class="col-12 col-md-12 col-lg-3 owl-slide">
                   <div
                     class="sub-head sub-head--red content-header content-header--white caret-left"
                   >
@@ -1368,7 +1380,7 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="col-12">
                   <div class="new-product wow fadeInRight">
                     <div
                       class="content-header content-header--bg-blue content-header--white caret-left"
@@ -1382,7 +1394,7 @@
                         <div class="block-container">
                           <div class="row">
                             <div
-                              class="new-item col-xl-3 col-md-4 col-xs-12 wow fadeInRight"
+                              class="new-item col-12 col-sm-6 col-lg-3 wow fadeInRight"
                               data-wow-delay="100ms"
                             >
                               <div class="product-block">
@@ -1417,26 +1429,26 @@
                                     >
                                   </div>
                                 </div>
-                                <div class="cart">
-                                  <form action="">
+                                <div class="cart-btn">
+                                  <div class="cart">
                                     <button type="submit">
-                                      <span>
-                                        <i
-                                          class="fa fa-shopping-cart caret-right"
-                                        ></i>
-                                      </span>
-                                      <span class="buynow">Mua ngay</span>
+                                      <i
+                                        class="fa fa-shopping-cart caret-right"
+                                      ></i>
+                                      <span>Mua ngay</span>
                                     </button>
-                                  </form>
-                                  <span>
-                                    <a href=""><i class="fa fa-eye"></i></a>
-                                  </span>
+                                  </div>
+                                  <div class="view">
+                                    <a href="">
+                                      <i class="fa fa-eye"></i>
+                                    </a>
+                                  </div>
                                 </div>
                               </div>
                             </div>
                             <div
-                              class="new-item col-xl-3 col-md-4 col-xs-12 wow fadeInRight"
-                              data-wow-delay="200ms"
+                              class="new-item col-12 col-sm-6 col-lg-3 wow fadeInRight"
+                              data-wow-delay="100ms"
                             >
                               <div class="product-block">
                                 <div class="product-image">
@@ -1470,26 +1482,26 @@
                                     >
                                   </div>
                                 </div>
-                                <div class="cart">
-                                  <form action="">
+                                <div class="cart-btn">
+                                  <div class="cart">
                                     <button type="submit">
-                                      <span>
-                                        <i
-                                          class="fa fa-shopping-cart caret-right"
-                                        ></i>
-                                      </span>
-                                      <span class="buynow">Mua ngay</span>
+                                      <i
+                                        class="fa fa-shopping-cart caret-right"
+                                      ></i>
+                                      <span>Mua ngay</span>
                                     </button>
-                                  </form>
-                                  <span>
-                                    <a href=""><i class="fa fa-eye"></i></a>
-                                  </span>
+                                  </div>
+                                  <div class="view">
+                                    <a href="">
+                                      <i class="fa fa-eye"></i>
+                                    </a>
+                                  </div>
                                 </div>
                               </div>
                             </div>
                             <div
-                              class="new-item col-xl-3 col-md-4 col-xs-12 wow fadeInRight"
-                              data-wow-delay="300ms"
+                              class="new-item col-12 col-sm-6 col-lg-3 wow fadeInRight"
+                              data-wow-delay="100ms"
                             >
                               <div class="product-block">
                                 <div class="product-image">
@@ -1523,26 +1535,26 @@
                                     >
                                   </div>
                                 </div>
-                                <div class="cart">
-                                  <form action="">
+                                <div class="cart-btn">
+                                  <div class="cart">
                                     <button type="submit">
-                                      <span>
-                                        <i
-                                          class="fa fa-shopping-cart caret-right"
-                                        ></i>
-                                      </span>
-                                      <span class="buynow">Mua ngay</span>
+                                      <i
+                                        class="fa fa-shopping-cart caret-right"
+                                      ></i>
+                                      <span>Mua ngay</span>
                                     </button>
-                                  </form>
-                                  <span>
-                                    <a href=""><i class="fa fa-eye"></i></a>
-                                  </span>
+                                  </div>
+                                  <div class="view">
+                                    <a href="">
+                                      <i class="fa fa-eye"></i>
+                                    </a>
+                                  </div>
                                 </div>
                               </div>
                             </div>
                             <div
-                              class="new-item col-xl-3 col-md-4 col-xs-12 wow fadeInRight"
-                              data-wow-delay="400ms"
+                              class="new-item col-12 col-sm-6 col-lg-3 wow fadeInRight"
+                              data-wow-delay="100ms"
                             >
                               <div class="product-block">
                                 <div class="product-image">
@@ -1576,20 +1588,20 @@
                                     >
                                   </div>
                                 </div>
-                                <div class="cart">
-                                  <form action="">
+                                <div class="cart-btn">
+                                  <div class="cart">
                                     <button type="submit">
-                                      <span>
-                                        <i
-                                          class="fa fa-shopping-cart caret-right"
-                                        ></i>
-                                      </span>
-                                      <span class="buynow">Mua ngay</span>
+                                      <i
+                                        class="fa fa-shopping-cart caret-right"
+                                      ></i>
+                                      <span>Mua ngay</span>
                                     </button>
-                                  </form>
-                                  <span>
-                                    <a href=""><i class="fa fa-eye"></i></a>
-                                  </span>
+                                  </div>
+                                  <div class="view">
+                                    <a href="">
+                                      <i class="fa fa-eye"></i>
+                                    </a>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -1598,8 +1610,8 @@
                         <div class="block-container">
                           <div class="row">
                             <div
-                              class="new-item col-xl-3 col-md-4 col-xs-12 wow fadeInRight"
-                              data-wow-delay="500ms"
+                              class="new-item col-12 col-sm-6 col-lg-3 wow fadeInRight"
+                              data-wow-delay="100ms"
                             >
                               <div class="product-block">
                                 <div class="product-image">
@@ -1633,26 +1645,26 @@
                                     >
                                   </div>
                                 </div>
-                                <div class="cart">
-                                  <form action="">
+                                <div class="cart-btn">
+                                  <div class="cart">
                                     <button type="submit">
-                                      <span>
-                                        <i
-                                          class="fa fa-shopping-cart caret-right"
-                                        ></i>
-                                      </span>
-                                      <span class="buynow">Mua ngay</span>
+                                      <i
+                                        class="fa fa-shopping-cart caret-right"
+                                      ></i>
+                                      <span>Mua ngay</span>
                                     </button>
-                                  </form>
-                                  <span>
-                                    <a href=""><i class="fa fa-eye"></i></a>
-                                  </span>
+                                  </div>
+                                  <div class="view">
+                                    <a href="">
+                                      <i class="fa fa-eye"></i>
+                                    </a>
+                                  </div>
                                 </div>
                               </div>
                             </div>
                             <div
-                              class="new-item col-xl-3 col-md-4 col-xs-12 wow fadeInRight"
-                              data-wow-delay="600ms"
+                              class="new-item col-12 col-sm-6 col-lg-3 wow fadeInRight"
+                              data-wow-delay="100ms"
                             >
                               <div class="product-block">
                                 <div class="product-image">
@@ -1686,26 +1698,26 @@
                                     >
                                   </div>
                                 </div>
-                                <div class="cart">
-                                  <form action="">
+                                <div class="cart-btn">
+                                  <div class="cart">
                                     <button type="submit">
-                                      <span>
-                                        <i
-                                          class="fa fa-shopping-cart caret-right"
-                                        ></i>
-                                      </span>
-                                      <span class="buynow">Mua ngay</span>
+                                      <i
+                                        class="fa fa-shopping-cart caret-right"
+                                      ></i>
+                                      <span>Mua ngay</span>
                                     </button>
-                                  </form>
-                                  <span>
-                                    <a href=""><i class="fa fa-eye"></i></a>
-                                  </span>
+                                  </div>
+                                  <div class="view">
+                                    <a href="">
+                                      <i class="fa fa-eye"></i>
+                                    </a>
+                                  </div>
                                 </div>
                               </div>
                             </div>
                             <div
-                              class="new-item col-xl-3 col-md-4 col-xs-12 wow fadeInRight"
-                              data-wow-delay="700ms"
+                              class="new-item col-12 col-sm-6 col-lg-3 wow fadeInRight"
+                              data-wow-delay="100ms"
                             >
                               <div class="product-block">
                                 <div class="product-image">
@@ -1739,26 +1751,26 @@
                                     >
                                   </div>
                                 </div>
-                                <div class="cart">
-                                  <form action="">
+                                <div class="cart-btn">
+                                  <div class="cart">
                                     <button type="submit">
-                                      <span>
-                                        <i
-                                          class="fa fa-shopping-cart caret-right"
-                                        ></i>
-                                      </span>
-                                      <span class="buynow">Mua ngay</span>
+                                      <i
+                                        class="fa fa-shopping-cart caret-right"
+                                      ></i>
+                                      <span>Mua ngay</span>
                                     </button>
-                                  </form>
-                                  <span>
-                                    <a href=""><i class="fa fa-eye"></i></a>
-                                  </span>
+                                  </div>
+                                  <div class="view">
+                                    <a href="">
+                                      <i class="fa fa-eye"></i>
+                                    </a>
+                                  </div>
                                 </div>
                               </div>
                             </div>
                             <div
-                              class="new-item col-xl-3 col-md-4 col-xs-12 wow fadeInRight"
-                              data-wow-delay="800ms"
+                              class="new-item col-12 col-sm-6 col-lg-3 wow fadeInRight"
+                              data-wow-delay="100ms"
                             >
                               <div class="product-block">
                                 <div class="product-image">
@@ -1792,20 +1804,20 @@
                                     >
                                   </div>
                                 </div>
-                                <div class="cart">
-                                  <form action="">
+                                <div class="cart-btn">
+                                  <div class="cart">
                                     <button type="submit">
-                                      <span>
-                                        <i
-                                          class="fa fa-shopping-cart caret-right"
-                                        ></i>
-                                      </span>
-                                      <span class="buynow">Mua ngay</span>
+                                      <i
+                                        class="fa fa-shopping-cart caret-right"
+                                      ></i>
+                                      <span>Mua ngay</span>
                                     </button>
-                                  </form>
-                                  <span>
-                                    <a href=""><i class="fa fa-eye"></i></a>
-                                  </span>
+                                  </div>
+                                  <div class="view">
+                                    <a href="">
+                                      <i class="fa fa-eye"></i>
+                                    </a>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -1816,7 +1828,7 @@
                         <div class="block-container">
                           <div class="row">
                             <div
-                              class="new-item col-xl-3 col-md-4 col-xs-12 wow fadeInRight"
+                              class="new-item col-12 col-sm-6 col-lg-3 wow fadeInRight"
                               data-wow-delay="100ms"
                             >
                               <div class="product-block">
@@ -1851,26 +1863,26 @@
                                     >
                                   </div>
                                 </div>
-                                <div class="cart">
-                                  <form action="">
+                                <div class="cart-btn">
+                                  <div class="cart">
                                     <button type="submit">
-                                      <span>
-                                        <i
-                                          class="fa fa-shopping-cart caret-right"
-                                        ></i>
-                                      </span>
-                                      <span class="buynow">Mua ngay</span>
+                                      <i
+                                        class="fa fa-shopping-cart caret-right"
+                                      ></i>
+                                      <span>Mua ngay</span>
                                     </button>
-                                  </form>
-                                  <span>
-                                    <a href=""><i class="fa fa-eye"></i></a>
-                                  </span>
+                                  </div>
+                                  <div class="view">
+                                    <a href="">
+                                      <i class="fa fa-eye"></i>
+                                    </a>
+                                  </div>
                                 </div>
                               </div>
                             </div>
                             <div
-                              class="new-item col-xl-3 col-md-4 col-xs-12 wow fadeInRight"
-                              data-wow-delay="200ms"
+                              class="new-item col-12 col-sm-6 col-lg-3 wow fadeInRight"
+                              data-wow-delay="100ms"
                             >
                               <div class="product-block">
                                 <div class="product-image">
@@ -1904,26 +1916,26 @@
                                     >
                                   </div>
                                 </div>
-                                <div class="cart">
-                                  <form action="">
+                                <div class="cart-btn">
+                                  <div class="cart">
                                     <button type="submit">
-                                      <span>
-                                        <i
-                                          class="fa fa-shopping-cart caret-right"
-                                        ></i>
-                                      </span>
-                                      <span class="buynow">Mua ngay</span>
+                                      <i
+                                        class="fa fa-shopping-cart caret-right"
+                                      ></i>
+                                      <span>Mua ngay</span>
                                     </button>
-                                  </form>
-                                  <span>
-                                    <a href=""><i class="fa fa-eye"></i></a>
-                                  </span>
+                                  </div>
+                                  <div class="view">
+                                    <a href="">
+                                      <i class="fa fa-eye"></i>
+                                    </a>
+                                  </div>
                                 </div>
                               </div>
                             </div>
                             <div
-                              class="new-item col-xl-3 col-md-4 col-xs-12 wow fadeInRight"
-                              data-wow-delay="300ms"
+                              class="new-item col-12 col-sm-6 col-lg-3 wow fadeInRight"
+                              data-wow-delay="100ms"
                             >
                               <div class="product-block">
                                 <div class="product-image">
@@ -1957,26 +1969,26 @@
                                     >
                                   </div>
                                 </div>
-                                <div class="cart">
-                                  <form action="">
+                                <div class="cart-btn">
+                                  <div class="cart">
                                     <button type="submit">
-                                      <span>
-                                        <i
-                                          class="fa fa-shopping-cart caret-right"
-                                        ></i>
-                                      </span>
-                                      <span class="buynow">Mua ngay</span>
+                                      <i
+                                        class="fa fa-shopping-cart caret-right"
+                                      ></i>
+                                      <span>Mua ngay</span>
                                     </button>
-                                  </form>
-                                  <span>
-                                    <a href=""><i class="fa fa-eye"></i></a>
-                                  </span>
+                                  </div>
+                                  <div class="view">
+                                    <a href="">
+                                      <i class="fa fa-eye"></i>
+                                    </a>
+                                  </div>
                                 </div>
                               </div>
                             </div>
                             <div
-                              class="new-item col-xl-3 col-md-4 col-xs-12 wow fadeInRight"
-                              data-wow-delay="400ms"
+                              class="new-item col-12 col-sm-6 col-lg-3 wow fadeInRight"
+                              data-wow-delay="100ms"
                             >
                               <div class="product-block">
                                 <div class="product-image">
@@ -2010,20 +2022,20 @@
                                     >
                                   </div>
                                 </div>
-                                <div class="cart">
-                                  <form action="">
+                                <div class="cart-btn">
+                                  <div class="cart">
                                     <button type="submit">
-                                      <span>
-                                        <i
-                                          class="fa fa-shopping-cart caret-right"
-                                        ></i>
-                                      </span>
-                                      <span class="buynow">Mua ngay</span>
+                                      <i
+                                        class="fa fa-shopping-cart caret-right"
+                                      ></i>
+                                      <span>Mua ngay</span>
                                     </button>
-                                  </form>
-                                  <span>
-                                    <a href=""><i class="fa fa-eye"></i></a>
-                                  </span>
+                                  </div>
+                                  <div class="view">
+                                    <a href="">
+                                      <i class="fa fa-eye"></i>
+                                    </a>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -2032,8 +2044,8 @@
                         <div class="block-container">
                           <div class="row">
                             <div
-                              class="new-item col-xl-3 col-md-4 col-xs-12 wow fadeInRight"
-                              data-wow-delay="500ms"
+                              class="new-item col-12 col-sm-6 col-lg-3 wow fadeInRight"
+                              data-wow-delay="100ms"
                             >
                               <div class="product-block">
                                 <div class="product-image">
@@ -2067,26 +2079,26 @@
                                     >
                                   </div>
                                 </div>
-                                <div class="cart">
-                                  <form action="">
+                                <div class="cart-btn">
+                                  <div class="cart">
                                     <button type="submit">
-                                      <span>
-                                        <i
-                                          class="fa fa-shopping-cart caret-right"
-                                        ></i>
-                                      </span>
-                                      <span class="buynow">Mua ngay</span>
+                                      <i
+                                        class="fa fa-shopping-cart caret-right"
+                                      ></i>
+                                      <span>Mua ngay</span>
                                     </button>
-                                  </form>
-                                  <span>
-                                    <a href=""><i class="fa fa-eye"></i></a>
-                                  </span>
+                                  </div>
+                                  <div class="view">
+                                    <a href="">
+                                      <i class="fa fa-eye"></i>
+                                    </a>
+                                  </div>
                                 </div>
                               </div>
                             </div>
                             <div
-                              class="new-item col-xl-3 col-md-4 col-xs-12 wow fadeInRight"
-                              data-wow-delay="600ms"
+                              class="new-item col-12 col-sm-6 col-lg-3 wow fadeInRight"
+                              data-wow-delay="100ms"
                             >
                               <div class="product-block">
                                 <div class="product-image">
@@ -2120,26 +2132,26 @@
                                     >
                                   </div>
                                 </div>
-                                <div class="cart">
-                                  <form action="">
+                                <div class="cart-btn">
+                                  <div class="cart">
                                     <button type="submit">
-                                      <span>
-                                        <i
-                                          class="fa fa-shopping-cart caret-right"
-                                        ></i>
-                                      </span>
-                                      <span class="buynow">Mua ngay</span>
+                                      <i
+                                        class="fa fa-shopping-cart caret-right"
+                                      ></i>
+                                      <span>Mua ngay</span>
                                     </button>
-                                  </form>
-                                  <span>
-                                    <a href=""><i class="fa fa-eye"></i></a>
-                                  </span>
+                                  </div>
+                                  <div class="view">
+                                    <a href="">
+                                      <i class="fa fa-eye"></i>
+                                    </a>
+                                  </div>
                                 </div>
                               </div>
                             </div>
                             <div
-                              class="new-item col-xl-3 col-md-4 col-xs-12 wow fadeInRight"
-                              data-wow-delay="700ms"
+                              class="new-item col-12 col-sm-6 col-lg-3 wow fadeInRight"
+                              data-wow-delay="100ms"
                             >
                               <div class="product-block">
                                 <div class="product-image">
@@ -2173,26 +2185,26 @@
                                     >
                                   </div>
                                 </div>
-                                <div class="cart">
-                                  <form action="">
+                                <div class="cart-btn">
+                                  <div class="cart">
                                     <button type="submit">
-                                      <span>
-                                        <i
-                                          class="fa fa-shopping-cart caret-right"
-                                        ></i>
-                                      </span>
-                                      <span class="buynow">Mua ngay</span>
+                                      <i
+                                        class="fa fa-shopping-cart caret-right"
+                                      ></i>
+                                      <span>Mua ngay</span>
                                     </button>
-                                  </form>
-                                  <span>
-                                    <a href=""><i class="fa fa-eye"></i></a>
-                                  </span>
+                                  </div>
+                                  <div class="view">
+                                    <a href="">
+                                      <i class="fa fa-eye"></i>
+                                    </a>
+                                  </div>
                                 </div>
                               </div>
                             </div>
                             <div
-                              class="new-item col-xl-3 col-md-4 col-xs-12 wow fadeInRight"
-                              data-wow-delay="800ms"
+                              class="new-item col-12 col-sm-6 col-lg-3 wow fadeInRight"
+                              data-wow-delay="100ms"
                             >
                               <div class="product-block">
                                 <div class="product-image">
@@ -2226,20 +2238,20 @@
                                     >
                                   </div>
                                 </div>
-                                <div class="cart">
-                                  <form action="">
+                                <div class="cart-btn">
+                                  <div class="cart">
                                     <button type="submit">
-                                      <span>
-                                        <i
-                                          class="fa fa-shopping-cart caret-right"
-                                        ></i>
-                                      </span>
-                                      <span class="buynow">Mua ngay</span>
+                                      <i
+                                        class="fa fa-shopping-cart caret-right"
+                                      ></i>
+                                      <span>Mua ngay</span>
                                     </button>
-                                  </form>
-                                  <span>
-                                    <a href=""><i class="fa fa-eye"></i></a>
-                                  </span>
+                                  </div>
+                                  <div class="view">
+                                    <a href="">
+                                      <i class="fa fa-eye"></i>
+                                    </a>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -2251,12 +2263,486 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-lg-12 col-md-12 col-xs-12">
+                <div class="col-12">
                   <div class="middle-banner">
                     <div class="home-banner">
                       <a href=""
                         ><img src="images/home-banner-2.png" alt=""
                       /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row wow fadeInRight">
+                <div class="col-xl-12 col-md-12 col-xs-12">
+                  <div id="sanphamnoibat" style="overflow: hidden;">
+                    <div
+                      class="content-header content-header--bg-black content-header--white caret-left"
+                    >
+                      <p class="title">
+                        sản phẩm <span style="font-weight: bold;">nổi bật</span>
+                      </p>
+                    </div>
+                    <div class="owl-carousel owl-theme slide-use">
+                      <div class="item">
+                        <div class="product-block">
+                          <div class="product-image">
+                            <a href="">
+                              <img src="images/new-product-img-1.jpg" alt="" />
+                              <span>
+                                <img
+                                  src="images/new-product-img-2.jpg"
+                                  alt=""
+                                />
+                              </span>
+                            </a>
+                            <div class="view-detail animated">
+                              <a href=""><span class="view-more">+ Xem</span></a>
+                            </div>
+                          </div>
+                          <div class="sale-box sale-box--triangle"></div>
+                          <div class="product-description">
+                            <p class="product-name">
+                              <a href="">
+                                Aplle iPad Wifi 3G 16GB ( Đen ) - Bản quốc tế</a
+                              >
+                            </p>
+                            <div class="price">
+                              <span class="negative-price"
+                                >5.250.000<sup>đ</sup></span
+                              >
+                              <span class="positive-price"
+                                >5.000.000<sup>đ</sup></span
+                              >
+                            </div>
+                          </div>
+                          <div class="cart-btn">
+                            <div class="cart">
+                              <button type="submit">
+                                <i class="fa fa-shopping-cart caret-right"></i>
+                                <span>Mua ngay</span>
+                              </button>
+                            </div>
+                            <div class="view">
+                              <a href="">
+                                <i class="fa fa-eye"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="product-block">
+                          <div class="product-image">
+                            <a href="">
+                              <img src="images/new-product-img-1.jpg" alt="" />
+                              <span>
+                                <img
+                                  src="images/new-product-img-2.jpg"
+                                  alt=""
+                                />
+                              </span>
+                            </a>
+                          </div>
+                          <div class="sale-box sale-box--triangle"></div>
+                          <div class="product-description">
+                            <p class="product-name">
+                              <a href="">
+                                Aplle iPad Wifi 3G 16GB ( Đen ) - Bản quốc tế</a
+                              >
+                            </p>
+                            <div class="price">
+                              <span class="negative-price"
+                                >5.250.000<sup>đ</sup></span
+                              >
+                              <span class="positive-price"
+                                >5.000.000<sup>đ</sup></span
+                              >
+                            </div>
+                          </div>
+                          <div class="cart-btn">
+                            <div class="cart">
+                              <button type="submit">
+                                <i class="fa fa-shopping-cart caret-right"></i>
+                                <span>Mua ngay</span>
+                              </button>
+                            </div>
+                            <div class="view">
+                              <a href="">
+                                <i class="fa fa-eye"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="product-block">
+                          <div class="product-image">
+                            <a href="">
+                              <img src="images/new-product-img-1.jpg" alt="" />
+                              <span>
+                                <img
+                                  src="images/new-product-img-2.jpg"
+                                  alt=""
+                                />
+                              </span>
+                            </a>
+                          </div>
+                          <div class="sale-box sale-box--triangle"></div>
+                          <div class="product-description">
+                            <p class="product-name">
+                              <a href="">
+                                Aplle iPad Wifi 3G 16GB ( Đen ) - Bản quốc tế</a
+                              >
+                            </p>
+                            <div class="price">
+                              <span class="negative-price"
+                                >5.250.000<sup>đ</sup></span
+                              >
+                              <span class="positive-price"
+                                >5.000.000<sup>đ</sup></span
+                              >
+                            </div>
+                          </div>
+                          <div class="cart-btn">
+                            <div class="cart">
+                              <button type="submit">
+                                <i class="fa fa-shopping-cart caret-right"></i>
+                                <span>Mua ngay</span>
+                              </button>
+                            </div>
+                            <div class="view">
+                              <a href="">
+                                <i class="fa fa-eye"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="product-block">
+                          <div class="product-image">
+                            <a href="">
+                              <img src="images/new-product-img-1.jpg" alt="" />
+                              <span>
+                                <img
+                                  src="images/new-product-img-2.jpg"
+                                  alt=""
+                                />
+                              </span>
+                            </a>
+                          </div>
+                          <div class="sale-box sale-box--triangle"></div>
+                          <div class="product-description">
+                            <p class="product-name">
+                              <a href="">
+                                Aplle iPad Wifi 3G 16GB ( Đen ) - Bản quốc tế</a
+                              >
+                            </p>
+                            <div class="price">
+                              <span class="negative-price"
+                                >5.250.000<sup>đ</sup></span
+                              >
+                              <span class="positive-price"
+                                >5.000.000<sup>đ</sup></span
+                              >
+                            </div>
+                          </div>
+                          <div class="cart-btn">
+                            <div class="cart">
+                              <button type="submit">
+                                <i class="fa fa-shopping-cart caret-right"></i>
+                                <span>Mua ngay</span>
+                              </button>
+                            </div>
+                            <div class="view">
+                              <a href="">
+                                <i class="fa fa-eye"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="product-block">
+                          <div class="product-image">
+                            <a href="">
+                              <img src="images/new-product-img-1.jpg" alt="" />
+                              <span>
+                                <img
+                                  src="images/new-product-img-2.jpg"
+                                  alt=""
+                                />
+                              </span>
+                            </a>
+                          </div>
+                          <div class="sale-box sale-box--triangle"></div>
+                          <div class="product-description">
+                            <p class="product-name">
+                              <a href="">
+                                Aplle iPad Wifi 3G 16GB ( Đen ) - Bản quốc tế</a
+                              >
+                            </p>
+                            <div class="price">
+                              <span class="negative-price"
+                                >5.250.000<sup>đ</sup></span
+                              >
+                              <span class="positive-price"
+                                >5.000.000<sup>đ</sup></span
+                              >
+                            </div>
+                          </div>
+                          <div class="cart-btn">
+                            <div class="cart">
+                              <button type="submit">
+                                <i class="fa fa-shopping-cart caret-right"></i>
+                                <span>Mua ngay</span>
+                              </button>
+                            </div>
+                            <div class="view">
+                              <a href="">
+                                <i class="fa fa-eye"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row wow fadeInRight">
+                <div class="col-xl-12 col-md-12 col-xs-12">
+                  <div id="sanphambanchay" style="overflow: hidden;">
+                    <div
+                      class="content-header content-header--bg-black content-header--white caret-left"
+                    >
+                      <p class="title">
+                        sản phẩm
+                        <span style="font-weight: bold;">bán chạy</span>
+                      </p>
+                    </div>
+                    <div class="owl-carousel owl-theme slide-use">
+                      <div class="item">
+                        <div class="product-block">
+                          <div class="product-image">
+                            <a href="">
+                              <img src="images/new-product-img-1.jpg" alt="" />
+                              <span>
+                                <img
+                                  src="images/new-product-img-2.jpg"
+                                  alt=""
+                                />
+                              </span>
+                            </a>
+                          </div>
+                          <div class="sale-box sale-box--triangle"></div>
+                          <div class="product-description">
+                            <p class="product-name">
+                              <a href="">
+                                Aplle iPad Wifi 3G 16GB ( Đen ) - Bản quốc tế</a
+                              >
+                            </p>
+                            <div class="price">
+                              <span class="negative-price"
+                                >5.250.000<sup>đ</sup></span
+                              >
+                              <span class="positive-price"
+                                >5.000.000<sup>đ</sup></span
+                              >
+                            </div>
+                          </div>
+                          <div class="cart-btn">
+                            <div class="cart">
+                              <button type="submit">
+                                <i class="fa fa-shopping-cart caret-right"></i>
+                                <span>Mua ngay</span>
+                              </button>
+                            </div>
+                            <div class="view">
+                              <a href="">
+                                <i class="fa fa-eye"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="product-block">
+                          <div class="product-image">
+                            <a href="">
+                              <img src="images/new-product-img-1.jpg" alt="" />
+                              <span>
+                                <img
+                                  src="images/new-product-img-2.jpg"
+                                  alt=""
+                                />
+                              </span>
+                            </a>
+                          </div>
+                          <div class="sale-box sale-box--triangle"></div>
+                          <div class="product-description">
+                            <p class="product-name">
+                              <a href="">
+                                Aplle iPad Wifi 3G 16GB ( Đen ) - Bản quốc tế</a
+                              >
+                            </p>
+                            <div class="price">
+                              <span class="negative-price"
+                                >5.250.000<sup>đ</sup></span
+                              >
+                              <span class="positive-price"
+                                >5.000.000<sup>đ</sup></span
+                              >
+                            </div>
+                          </div>
+                          <div class="cart-btn">
+                            <div class="cart">
+                              <button type="submit">
+                                <i class="fa fa-shopping-cart caret-right"></i>
+                                <span>Mua ngay</span>
+                              </button>
+                            </div>
+                            <div class="view">
+                              <a href="">
+                                <i class="fa fa-eye"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="product-block">
+                          <div class="product-image">
+                            <a href="">
+                              <img src="images/new-product-img-1.jpg" alt="" />
+                              <span>
+                                <img
+                                  src="images/new-product-img-2.jpg"
+                                  alt=""
+                                />
+                              </span>
+                            </a>
+                          </div>
+                          <div class="sale-box sale-box--triangle"></div>
+                          <div class="product-description">
+                            <p class="product-name">
+                              <a href="">
+                                Aplle iPad Wifi 3G 16GB ( Đen ) - Bản quốc tế</a
+                              >
+                            </p>
+                            <div class="price">
+                              <span class="negative-price"
+                                >5.250.000<sup>đ</sup></span
+                              >
+                              <span class="positive-price"
+                                >5.000.000<sup>đ</sup></span
+                              >
+                            </div>
+                          </div>
+                          <div class="cart-btn">
+                            <div class="cart">
+                              <button type="submit">
+                                <i class="fa fa-shopping-cart caret-right"></i>
+                                <span>Mua ngay</span>
+                              </button>
+                            </div>
+                            <div class="view">
+                              <a href="">
+                                <i class="fa fa-eye"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="product-block">
+                          <div class="product-image">
+                            <a href="">
+                              <img src="images/new-product-img-1.jpg" alt="" />
+                              <span>
+                                <img
+                                  src="images/new-product-img-2.jpg"
+                                  alt=""
+                                />
+                              </span>
+                            </a>
+                          </div>
+                          <div class="sale-box sale-box--triangle"></div>
+                          <div class="product-description">
+                            <p class="product-name">
+                              <a href="">
+                                Aplle iPad Wifi 3G 16GB ( Đen ) - Bản quốc tế</a
+                              >
+                            </p>
+                            <div class="price">
+                              <span class="negative-price"
+                                >5.250.000<sup>đ</sup></span
+                              >
+                              <span class="positive-price"
+                                >5.000.000<sup>đ</sup></span
+                              >
+                            </div>
+                          </div>
+                          <div class="cart-btn">
+                            <div class="cart">
+                              <button type="submit">
+                                <i class="fa fa-shopping-cart caret-right"></i>
+                                <span>Mua ngay</span>
+                              </button>
+                            </div>
+                            <div class="view">
+                              <a href="">
+                                <i class="fa fa-eye"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="product-block">
+                          <div class="product-image">
+                            <a href="">
+                              <img src="images/new-product-img-1.jpg" alt="" />
+                              <span>
+                                <img
+                                  src="images/new-product-img-2.jpg"
+                                  alt=""
+                                />
+                              </span>
+                            </a>
+                          </div>
+                          <div class="sale-box sale-box--triangle"></div>
+                          <div class="product-description">
+                            <p class="product-name">
+                              <a href="">
+                                Aplle iPad Wifi 3G 16GB ( Đen ) - Bản quốc tế</a
+                              >
+                            </p>
+                            <div class="price">
+                              <span class="negative-price"
+                                >5.250.000<sup>đ</sup></span
+                              >
+                              <span class="positive-price"
+                                >5.000.000<sup>đ</sup></span
+                              >
+                            </div>
+                          </div>
+                          <div class="cart-btn">
+                            <div class="cart">
+                              <button type="submit">
+                                <i class="fa fa-shopping-cart caret-right"></i>
+                                <span>Mua ngay</span>
+                              </button>
+                            </div>
+                            <div class="view">
+                              <a href="">
+                                <i class="fa fa-eye"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -2301,20 +2787,150 @@
                               >
                             </div>
                           </div>
-                          <div class="cart">
-                            <form action="">
+                          <div class="cart-btn">
+                            <div class="cart">
                               <button type="submit">
-                                <span>
-                                  <i
-                                    class="fa fa-shopping-cart caret-right"
-                                  ></i>
-                                </span>
-                                <span class="buynow">Mua ngay</span>
+                                <i class="fa fa-shopping-cart caret-right"></i>
+                                <span>Mua ngay</span>
                               </button>
-                            </form>
-                            <span>
-                              <a href=""><i class="fa fa-eye"></i></a>
-                            </span>
+                            </div>
+                            <div class="view">
+                              <a href="">
+                                <i class="fa fa-eye"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="product-block">
+                          <div class="product-image">
+                            <a href="">
+                              <img src="images/new-product-img-1.jpg" alt="" />
+                              <span>
+                                <img
+                                  src="images/new-product-img-2.jpg"
+                                  alt=""
+                                />
+                              </span>
+                            </a>
+                          </div>
+                          <div class="sale-box sale-box--triangle"></div>
+                          <div class="product-description">
+                            <p class="product-name">
+                              <a href="">
+                                Aplle iPad Wifi 3G 16GB ( Đen ) - Bản quốc tế</a
+                              >
+                            </p>
+                            <div class="price">
+                              <span class="negative-price"
+                                >5.250.000<sup>đ</sup></span
+                              >
+                              <span class="positive-price"
+                                >5.000.000<sup>đ</sup></span
+                              >
+                            </div>
+                          </div>
+                          <div class="cart-btn">
+                            <div class="cart">
+                              <button type="submit">
+                                <i class="fa fa-shopping-cart caret-right"></i>
+                                <span>Mua ngay</span>
+                              </button>
+                            </div>
+                            <div class="view">
+                              <a href="">
+                                <i class="fa fa-eye"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="product-block">
+                          <div class="product-image">
+                            <a href="">
+                              <img src="images/new-product-img-1.jpg" alt="" />
+                              <span>
+                                <img
+                                  src="images/new-product-img-2.jpg"
+                                  alt=""
+                                />
+                              </span>
+                            </a>
+                          </div>
+                          <div class="sale-box sale-box--triangle"></div>
+                          <div class="product-description">
+                            <p class="product-name">
+                              <a href="">
+                                Aplle iPad Wifi 3G 16GB ( Đen ) - Bản quốc tế</a
+                              >
+                            </p>
+                            <div class="price">
+                              <span class="negative-price"
+                                >5.250.000<sup>đ</sup></span
+                              >
+                              <span class="positive-price"
+                                >5.000.000<sup>đ</sup></span
+                              >
+                            </div>
+                          </div>
+                          <div class="cart-btn">
+                            <div class="cart">
+                              <button type="submit">
+                                <i class="fa fa-shopping-cart caret-right"></i>
+                                <span>Mua ngay</span>
+                              </button>
+                            </div>
+                            <div class="view">
+                              <a href="">
+                                <i class="fa fa-eye"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="product-block">
+                          <div class="product-image">
+                            <a href="">
+                              <img src="images/new-product-img-1.jpg" alt="" />
+                              <span>
+                                <img
+                                  src="images/new-product-img-2.jpg"
+                                  alt=""
+                                />
+                              </span>
+                            </a>
+                          </div>
+                          <div class="sale-box sale-box--triangle"></div>
+                          <div class="product-description">
+                            <p class="product-name">
+                              <a href="">
+                                Aplle iPad Wifi 3G 16GB ( Đen ) - Bản quốc tế</a
+                              >
+                            </p>
+                            <div class="price">
+                              <span class="negative-price"
+                                >5.250.000<sup>đ</sup></span
+                              >
+                              <span class="positive-price"
+                                >5.000.000<sup>đ</sup></span
+                              >
+                            </div>
+                          </div>
+                          <div class="cart-btn">
+                            <div class="cart">
+                              <button type="submit">
+                                <i class="fa fa-shopping-cart caret-right"></i>
+                                <span>Mua ngay</span>
+                              </button>
+                            </div>
+                            <div class="view">
+                              <a href="">
+                                <i class="fa fa-eye"></i>
+                              </a>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -2358,637 +2974,7 @@
                                 <span class="buynow">Mua ngay</span>
                               </button>
                             </form>
-                            <span>
-                              <a href=""><i class="fa fa-eye"></i></a>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="product-block">
-                          <div class="product-image">
-                            <a href="">
-                              <img src="images/new-product-img-1.jpg" alt="" />
-                              <span>
-                                <img
-                                  src="images/new-product-img-2.jpg"
-                                  alt=""
-                                />
-                              </span>
-                            </a>
-                          </div>
-                          <div class="sale-box sale-box--triangle"></div>
-                          <div class="product-description">
-                            <p class="product-name">
-                              <a href="">
-                                Aplle iPad Wifi 3G 16GB ( Đen ) - Bản quốc tế</a
-                              >
-                            </p>
-                            <div class="price">
-                              <span class="negative-price"
-                                >5.250.000<sup>đ</sup></span
-                              >
-                              <span class="positive-price"
-                                >5.000.000<sup>đ</sup></span
-                              >
-                            </div>
-                          </div>
-                          <div class="cart">
-                            <form action="">
-                              <button type="submit">
-                                <span>
-                                  <i
-                                    class="fa fa-shopping-cart caret-right"
-                                  ></i>
-                                </span>
-                                <span class="buynow">Mua ngay</span>
-                              </button>
-                            </form>
-                            <span>
-                              <a href=""><i class="fa fa-eye"></i></a>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="product-block">
-                          <div class="product-image">
-                            <a href="">
-                              <img src="images/new-product-img-1.jpg" alt="" />
-                              <span>
-                                <img
-                                  src="images/new-product-img-2.jpg"
-                                  alt=""
-                                />
-                              </span>
-                            </a>
-                          </div>
-                          <div class="sale-box sale-box--triangle"></div>
-                          <div class="product-description">
-                            <p class="product-name">
-                              <a href="">
-                                Aplle iPad Wifi 3G 16GB ( Đen ) - Bản quốc tế</a
-                              >
-                            </p>
-                            <div class="price">
-                              <span class="negative-price"
-                                >5.250.000<sup>đ</sup></span
-                              >
-                              <span class="positive-price"
-                                >5.000.000<sup>đ</sup></span
-                              >
-                            </div>
-                          </div>
-                          <div class="cart">
-                            <form action="">
-                              <button type="submit">
-                                <span>
-                                  <i
-                                    class="fa fa-shopping-cart caret-right"
-                                  ></i>
-                                </span>
-                                <span class="buynow">Mua ngay</span>
-                              </button>
-                            </form>
-                            <span>
-                              <a href=""><i class="fa fa-eye"></i></a>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="product-block">
-                          <div class="product-image">
-                            <a href="">
-                              <img src="images/new-product-img-1.jpg" alt="" />
-                              <span>
-                                <img
-                                  src="images/new-product-img-2.jpg"
-                                  alt=""
-                                />
-                              </span>
-                            </a>
-                          </div>
-                          <div class="sale-box sale-box--triangle"></div>
-                          <div class="product-description">
-                            <p class="product-name">
-                              <a href="">
-                                Aplle iPad Wifi 3G 16GB ( Đen ) - Bản quốc tế</a
-                              >
-                            </p>
-                            <div class="price">
-                              <span class="negative-price"
-                                >5.250.000<sup>đ</sup></span
-                              >
-                              <span class="positive-price"
-                                >5.000.000<sup>đ</sup></span
-                              >
-                            </div>
-                          </div>
-                          <div class="cart">
-                            <form action="">
-                              <button type="submit">
-                                <span>
-                                  <i
-                                    class="fa fa-shopping-cart caret-right"
-                                  ></i>
-                                </span>
-                                <span class="buynow">Mua ngay</span>
-                              </button>
-                            </form>
-                            <span>
-                              <a href=""><i class="fa fa-eye"></i></a>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row wow fadeInRight">
-                <div class="col-xl-12 col-md-12 col-xs-12">
-                  <div id="sanphambanchay" style="overflow: hidden;">
-                    <div
-                      class="content-header content-header--bg-black content-header--white caret-left"
-                    >
-                      <p class="title">
-                        sản phẩm <span style="font-weight: bold;">bán chạy</span>
-                      </p>
-                    </div>
-                    <div class="owl-carousel owl-theme slide-use">
-                      <div class="item">
-                        <div class="product-block">
-                          <div class="product-image">
-                            <a href="">
-                              <img src="images/new-product-img-1.jpg" alt="" />
-                              <span>
-                                <img
-                                  src="images/new-product-img-2.jpg"
-                                  alt=""
-                                />
-                              </span>
-                            </a>
-                          </div>
-                          <div class="sale-box sale-box--triangle"></div>
-                          <div class="product-description">
-                            <p class="product-name">
-                              <a href="">
-                                Aplle iPad Wifi 3G 16GB ( Đen ) - Bản quốc tế</a
-                              >
-                            </p>
-                            <div class="price">
-                              <span class="negative-price"
-                                >5.250.000<sup>đ</sup></span
-                              >
-                              <span class="positive-price"
-                                >5.000.000<sup>đ</sup></span
-                              >
-                            </div>
-                          </div>
-                          <div class="cart">
-                            <form action="">
-                              <button type="submit">
-                                <span>
-                                  <i
-                                    class="fa fa-shopping-cart caret-right"
-                                  ></i>
-                                </span>
-                                <span class="buynow">Mua ngay</span>
-                              </button>
-                            </form>
-                            <span>
-                              <a href=""><i class="fa fa-eye"></i></a>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="product-block">
-                          <div class="product-image">
-                            <a href="">
-                              <img src="images/new-product-img-1.jpg" alt="" />
-                              <span>
-                                <img
-                                  src="images/new-product-img-2.jpg"
-                                  alt=""
-                                />
-                              </span>
-                            </a>
-                          </div>
-                          <div class="sale-box sale-box--triangle"></div>
-                          <div class="product-description">
-                            <p class="product-name">
-                              <a href="">
-                                Aplle iPad Wifi 3G 16GB ( Đen ) - Bản quốc tế</a
-                              >
-                            </p>
-                            <div class="price">
-                              <span class="negative-price"
-                                >5.250.000<sup>đ</sup></span
-                              >
-                              <span class="positive-price"
-                                >5.000.000<sup>đ</sup></span
-                              >
-                            </div>
-                          </div>
-                          <div class="cart">
-                            <form action="">
-                              <button type="submit">
-                                <span>
-                                  <i
-                                    class="fa fa-shopping-cart caret-right"
-                                  ></i>
-                                </span>
-                                <span class="buynow">Mua ngay</span>
-                              </button>
-                            </form>
-                            <span>
-                              <a href=""><i class="fa fa-eye"></i></a>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="product-block">
-                          <div class="product-image">
-                            <a href="">
-                              <img src="images/new-product-img-1.jpg" alt="" />
-                              <span>
-                                <img
-                                  src="images/new-product-img-2.jpg"
-                                  alt=""
-                                />
-                              </span>
-                            </a>
-                          </div>
-                          <div class="sale-box sale-box--triangle"></div>
-                          <div class="product-description">
-                            <p class="product-name">
-                              <a href="">
-                                Aplle iPad Wifi 3G 16GB ( Đen ) - Bản quốc tế</a
-                              >
-                            </p>
-                            <div class="price">
-                              <span class="negative-price"
-                                >5.250.000<sup>đ</sup></span
-                              >
-                              <span class="positive-price"
-                                >5.000.000<sup>đ</sup></span
-                              >
-                            </div>
-                          </div>
-                          <div class="cart">
-                            <form action="">
-                              <button type="submit">
-                                <span>
-                                  <i
-                                    class="fa fa-shopping-cart caret-right"
-                                  ></i>
-                                </span>
-                                <span class="buynow">Mua ngay</span>
-                              </button>
-                            </form>
-                            <span>
-                              <a href=""><i class="fa fa-eye"></i></a>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="product-block">
-                          <div class="product-image">
-                            <a href="">
-                              <img src="images/new-product-img-1.jpg" alt="" />
-                              <span>
-                                <img
-                                  src="images/new-product-img-2.jpg"
-                                  alt=""
-                                />
-                              </span>
-                            </a>
-                          </div>
-                          <div class="sale-box sale-box--triangle"></div>
-                          <div class="product-description">
-                            <p class="product-name">
-                              <a href="">
-                                Aplle iPad Wifi 3G 16GB ( Đen ) - Bản quốc tế</a
-                              >
-                            </p>
-                            <div class="price">
-                              <span class="negative-price"
-                                >5.250.000<sup>đ</sup></span
-                              >
-                              <span class="positive-price"
-                                >5.000.000<sup>đ</sup></span
-                              >
-                            </div>
-                          </div>
-                          <div class="cart">
-                            <form action="">
-                              <button type="submit">
-                                <span>
-                                  <i
-                                    class="fa fa-shopping-cart caret-right"
-                                  ></i>
-                                </span>
-                                <span class="buynow">Mua ngay</span>
-                              </button>
-                            </form>
-                            <span>
-                              <a href=""><i class="fa fa-eye"></i></a>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="product-block">
-                          <div class="product-image">
-                            <a href="">
-                              <img src="images/new-product-img-1.jpg" alt="" />
-                              <span>
-                                <img
-                                  src="images/new-product-img-2.jpg"
-                                  alt=""
-                                />
-                              </span>
-                            </a>
-                          </div>
-                          <div class="sale-box sale-box--triangle"></div>
-                          <div class="product-description">
-                            <p class="product-name">
-                              <a href="">
-                                Aplle iPad Wifi 3G 16GB ( Đen ) - Bản quốc tế</a
-                              >
-                            </p>
-                            <div class="price">
-                              <span class="negative-price"
-                                >5.250.000<sup>đ</sup></span
-                              >
-                              <span class="positive-price"
-                                >5.000.000<sup>đ</sup></span
-                              >
-                            </div>
-                          </div>
-                          <div class="cart">
-                            <form action="">
-                              <button type="submit">
-                                <span>
-                                  <i
-                                    class="fa fa-shopping-cart caret-right"
-                                  ></i>
-                                </span>
-                                <span class="buynow">Mua ngay</span>
-                              </button>
-                            </form>
-                            <span>
-                              <a href=""><i class="fa fa-eye"></i></a>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row wow fadeInRight">
-                <div class="col-xl-12 col-md-12 col-xs-12">
-                  <div id="sanphamcongnghe" style="overflow: hidden;">
-                    <div
-                      class="content-header content-header--bg-black content-header--white caret-left"
-                    >
-                      <p class="title">
-                        sản phẩm <span style="font-weight: bold;">thời thượng</span>
-                      </p>
-                    </div>
-                    <div class="owl-carousel owl-theme slide-use">
-                      <div class="item">
-                        <div class="product-block">
-                          <div class="product-image">
-                            <a href="">
-                              <img src="images/new-product-img-1.jpg" alt="" />
-                              <span>
-                                <img
-                                  src="images/new-product-img-2.jpg"
-                                  alt=""
-                                />
-                              </span>
-                            </a>
-                          </div>
-                          <div class="sale-box sale-box--triangle"></div>
-                          <div class="product-description">
-                            <p class="product-name">
-                              <a href="">
-                                Aplle iPad Wifi 3G 16GB ( Đen ) - Bản quốc tế</a
-                              >
-                            </p>
-                            <div class="price">
-                              <span class="negative-price"
-                                >5.250.000<sup>đ</sup></span
-                              >
-                              <span class="positive-price"
-                                >5.000.000<sup>đ</sup></span
-                              >
-                            </div>
-                          </div>
-                          <div class="cart">
-                            <form action="">
-                              <button type="submit">
-                                <span>
-                                  <i
-                                    class="fa fa-shopping-cart caret-right"
-                                  ></i>
-                                </span>
-                                <span class="buynow">Mua ngay</span>
-                              </button>
-                            </form>
-                            <span>
-                              <a href=""><i class="fa fa-eye"></i></a>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="product-block">
-                          <div class="product-image">
-                            <a href="">
-                              <img src="images/new-product-img-1.jpg" alt="" />
-                              <span>
-                                <img
-                                  src="images/new-product-img-2.jpg"
-                                  alt=""
-                                />
-                              </span>
-                            </a>
-                          </div>
-                          <div class="sale-box sale-box--triangle"></div>
-                          <div class="product-description">
-                            <p class="product-name">
-                              <a href="">
-                                Aplle iPad Wifi 3G 16GB ( Đen ) - Bản quốc tế</a
-                              >
-                            </p>
-                            <div class="price">
-                              <span class="negative-price"
-                                >5.250.000<sup>đ</sup></span
-                              >
-                              <span class="positive-price"
-                                >5.000.000<sup>đ</sup></span
-                              >
-                            </div>
-                          </div>
-                          <div class="cart">
-                            <form action="">
-                              <button type="submit">
-                                <span>
-                                  <i
-                                    class="fa fa-shopping-cart caret-right"
-                                  ></i>
-                                </span>
-                                <span class="buynow">Mua ngay</span>
-                              </button>
-                            </form>
-                            <span>
-                              <a href=""><i class="fa fa-eye"></i></a>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="product-block">
-                          <div class="product-image">
-                            <a href="">
-                              <img src="images/new-product-img-1.jpg" alt="" />
-                              <span>
-                                <img
-                                  src="images/new-product-img-2.jpg"
-                                  alt=""
-                                />
-                              </span>
-                            </a>
-                          </div>
-                          <div class="sale-box sale-box--triangle"></div>
-                          <div class="product-description">
-                            <p class="product-name">
-                              <a href="">
-                                Aplle iPad Wifi 3G 16GB ( Đen ) - Bản quốc tế</a
-                              >
-                            </p>
-                            <div class="price">
-                              <span class="negative-price"
-                                >5.250.000<sup>đ</sup></span
-                              >
-                              <span class="positive-price"
-                                >5.000.000<sup>đ</sup></span
-                              >
-                            </div>
-                          </div>
-                          <div class="cart">
-                            <form action="">
-                              <button type="submit">
-                                <span>
-                                  <i
-                                    class="fa fa-shopping-cart caret-right"
-                                  ></i>
-                                </span>
-                                <span class="buynow">Mua ngay</span>
-                              </button>
-                            </form>
-                            <span>
-                              <a href=""><i class="fa fa-eye"></i></a>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="product-block">
-                          <div class="product-image">
-                            <a href="">
-                              <img src="images/new-product-img-1.jpg" alt="" />
-                              <span>
-                                <img
-                                  src="images/new-product-img-2.jpg"
-                                  alt=""
-                                />
-                              </span>
-                            </a>
-                          </div>
-                          <div class="sale-box sale-box--triangle"></div>
-                          <div class="product-description">
-                            <p class="product-name">
-                              <a href="">
-                                Aplle iPad Wifi 3G 16GB ( Đen ) - Bản quốc tế</a
-                              >
-                            </p>
-                            <div class="price">
-                              <span class="negative-price"
-                                >5.250.000<sup>đ</sup></span
-                              >
-                              <span class="positive-price"
-                                >5.000.000<sup>đ</sup></span
-                              >
-                            </div>
-                          </div>
-                          <div class="cart">
-                            <form action="">
-                              <button type="submit">
-                                <span>
-                                  <i
-                                    class="fa fa-shopping-cart caret-right"
-                                  ></i>
-                                </span>
-                                <span class="buynow">Mua ngay</span>
-                              </button>
-                            </form>
-                            <span>
-                              <a href=""><i class="fa fa-eye"></i></a>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="product-block">
-                          <div class="product-image">
-                            <a href="">
-                              <img src="images/new-product-img-1.jpg" alt="" />
-                              <span>
-                                <img
-                                  src="images/new-product-img-2.jpg"
-                                  alt=""
-                                />
-                              </span>
-                            </a>
-                          </div>
-                          <div class="sale-box sale-box--triangle"></div>
-                          <div class="product-description">
-                            <p class="product-name">
-                              <a href="">
-                                Aplle iPad Wifi 3G 16GB ( Đen ) - Bản quốc tế</a
-                              >
-                            </p>
-                            <div class="price">
-                              <span class="negative-price"
-                                >5.250.000<sup>đ</sup></span
-                              >
-                              <span class="positive-price"
-                                >5.000.000<sup>đ</sup></span
-                              >
-                            </div>
-                          </div>
-                          <div class="cart">
-                            <form action="">
-                              <button type="submit">
-                                <span>
-                                  <i
-                                    class="fa fa-shopping-cart caret-right"
-                                  ></i>
-                                </span>
-                                <span class="buynow">Mua ngay</span>
-                              </button>
-                            </form>
-                            <span>
-                              <a href=""><i class="fa fa-eye"></i></a>
-                            </span>
+                            <a href=""><i class="fa fa-eye"></i></a>
                           </div>
                         </div>
                       </div>
@@ -3003,7 +2989,8 @@
                       class="content-header content-header--bg-black content-header--white caret-left"
                     >
                       <p class="title">
-                        sản phẩm <span style="font-weight: bold;">thời thượng</span>
+                        sản phẩm
+                        <span style="font-weight: bold;">thời thượng</span>
                       </p>
                     </div>
                     <div class="owl-carousel owl-theme slide-use">
@@ -3036,20 +3023,18 @@
                               >
                             </div>
                           </div>
-                          <div class="cart">
-                            <form action="">
+                          <div class="cart-btn">
+                            <div class="cart">
                               <button type="submit">
-                                <span>
-                                  <i
-                                    class="fa fa-shopping-cart caret-right"
-                                  ></i>
-                                </span>
-                                <span class="buynow">Mua ngay</span>
+                                <i class="fa fa-shopping-cart caret-right"></i>
+                                <span>Mua ngay</span>
                               </button>
-                            </form>
-                            <span>
-                              <a href=""><i class="fa fa-eye"></i></a>
-                            </span>
+                            </div>
+                            <div class="view">
+                              <a href="">
+                                <i class="fa fa-eye"></i>
+                              </a>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -3082,20 +3067,18 @@
                               >
                             </div>
                           </div>
-                          <div class="cart">
-                            <form action="">
+                          <div class="cart-btn">
+                            <div class="cart">
                               <button type="submit">
-                                <span>
-                                  <i
-                                    class="fa fa-shopping-cart caret-right"
-                                  ></i>
-                                </span>
-                                <span class="buynow">Mua ngay</span>
+                                <i class="fa fa-shopping-cart caret-right"></i>
+                                <span>Mua ngay</span>
                               </button>
-                            </form>
-                            <span>
-                              <a href=""><i class="fa fa-eye"></i></a>
-                            </span>
+                            </div>
+                            <div class="view">
+                              <a href="">
+                                <i class="fa fa-eye"></i>
+                              </a>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -3128,20 +3111,18 @@
                               >
                             </div>
                           </div>
-                          <div class="cart">
-                            <form action="">
+                          <div class="cart-btn">
+                            <div class="cart">
                               <button type="submit">
-                                <span>
-                                  <i
-                                    class="fa fa-shopping-cart caret-right"
-                                  ></i>
-                                </span>
-                                <span class="buynow">Mua ngay</span>
+                                <i class="fa fa-shopping-cart caret-right"></i>
+                                <span>Mua ngay</span>
                               </button>
-                            </form>
-                            <span>
-                              <a href=""><i class="fa fa-eye"></i></a>
-                            </span>
+                            </div>
+                            <div class="view">
+                              <a href="">
+                                <i class="fa fa-eye"></i>
+                              </a>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -3174,20 +3155,18 @@
                               >
                             </div>
                           </div>
-                          <div class="cart">
-                            <form action="">
+                          <div class="cart-btn">
+                            <div class="cart">
                               <button type="submit">
-                                <span>
-                                  <i
-                                    class="fa fa-shopping-cart caret-right"
-                                  ></i>
-                                </span>
-                                <span class="buynow">Mua ngay</span>
+                                <i class="fa fa-shopping-cart caret-right"></i>
+                                <span>Mua ngay</span>
                               </button>
-                            </form>
-                            <span>
-                              <a href=""><i class="fa fa-eye"></i></a>
-                            </span>
+                            </div>
+                            <div class="view">
+                              <a href="">
+                                <i class="fa fa-eye"></i>
+                              </a>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -3220,20 +3199,18 @@
                               >
                             </div>
                           </div>
-                          <div class="cart">
-                            <form action="">
+                          <div class="cart-btn">
+                            <div class="cart">
                               <button type="submit">
-                                <span>
-                                  <i
-                                    class="fa fa-shopping-cart caret-right"
-                                  ></i>
-                                </span>
-                                <span class="buynow">Mua ngay</span>
+                                <i class="fa fa-shopping-cart caret-right"></i>
+                                <span>Mua ngay</span>
                               </button>
-                            </form>
-                            <span>
-                              <a href=""><i class="fa fa-eye"></i></a>
-                            </span>
+                            </div>
+                            <div class="view">
+                              <a href="">
+                                <i class="fa fa-eye"></i>
+                              </a>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -3486,7 +3463,7 @@
             </div>
             <div class="col-xl-6 col-sm-12 col-xs-12 wow fadeInUp footer-link">
               <div class="row">
-                <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="col-lg-4 col-md-4 col-sm-12">
                   <div class="link-block">
                     <p class="block-title caret-left-only">Tài khoản</p>
                     <div class="block-content">
@@ -3507,7 +3484,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="col-lg-4 col-md-4 col-sm-12">
                   <div class="link-block">
                     <p class="block-title caret-left-only">Thông tin</p>
                     <div class="block-content">
@@ -3528,7 +3505,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="col-lg-4 col-md-4 col-sm-12">
                   <div class="link-block">
                     <p class="block-title caret-left-only">Chính sách</p>
                     <div class="block-content">
@@ -3593,11 +3570,13 @@
         </div>
       </div>
       <div class="copyright">
-        <p>
-          © Copyright
-          <a href=""> ApolloTheme</a>
-        </p>
-        <p><a href="">Powered by Haravan</a></p>
+        <div class=" wow bounceInLeft">
+          <p class="">
+            © Copyright
+            <a href=""> ApolloTheme</a>
+          </p>
+          <p><a href="">Powered by Haravan</a></p>
+        </div>
       </div>
     </footer>
     <!-- /footer -->
@@ -3783,20 +3762,18 @@
           });
         }
       });
-      let listSubMenu = $(".sub-menu-open");
-      for (let index = 0; index < listSubMenu.length; index++) {
-        const element = listSubMenu[index];
-        $(element).hover(
-          function () {
-            // over
-            $(element).find(".sub-menu").show(300);
-          },
-          function () {
-            // out
-            $(element).find(".sub-menu").hide(300);
-          }
-        );
-      }
+      $(".sub-menu-open .toggleMenu").click(function () { 
+        let temp = $(this).parent().children(".sub-menu");
+        $(temp).toggle(300);
+      });
+      $(".block-title").click(function () { 
+        if ($(this).hasClass("active")) {
+          $(this).removeClass("active");
+        } else {
+          $(this).addClass(" active");
+        }
+        $($(this).parent().find(".block-content")).toggle(300);
+      });
       $("#slider").nivoSlider({
         controlNav: false,
         pauseOnHover: false,
@@ -3885,19 +3862,30 @@
     $(document).ready(function () {
       $(".new-container").owlCarousel({
         items: 1,
-        autoplay: true,
-        nav: true,
-        dots: false,
-        loop: true,
-        lazyLoad: true,
-      });
-      $(".slide-use").owlCarousel({
-        items: 4,
         autoplay: false,
         nav: true,
         dots: false,
         loop: true,
         lazyLoad: true,
+        responsive: {
+          992: {
+            autoplay: true,
+          },
+        },
+      });
+      $(".slide-use").owlCarousel({
+        items: 2,
+        margin: 15,
+        autoplay: false,
+        nav: true,
+        dots: false,
+        loop: true,
+        lazyLoad: true,
+        responsive: {
+          992: {
+            items: 4,
+          },
+        },
       });
     });
   </script>
@@ -3911,6 +3899,29 @@
         dots: false,
         loop: true,
         lazyLoad: true,
+        responsive: {
+          768: {
+            items: 2,
+          },
+          992: {
+            items: 1,
+          },
+        },
+      });
+      $(".hot-sale-left").owlCarousel({
+        items: 1,
+        autoplay: false,
+        nav: true,
+        dots: false,
+        loop: true,
+        lazyLoad: true,
+        responsive: {},
+      });
+      $(".content-header .blank").click(function (e) { 
+        $(".vertical-menu > li").toggle(200);
+      });
+      $(".content-header .blank-2").click(function (e) { 
+        $(this).parent().parent().find("ul:first").toggle(200);
       });
     });
   </script>
